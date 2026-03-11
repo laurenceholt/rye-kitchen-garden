@@ -2,7 +2,7 @@ import { useRef, useState, useCallback, useEffect } from 'react';
 import { ZoomIn, ZoomOut, Maximize } from 'lucide-react';
 import { GridOverlay } from './GridOverlay';
 import { useGarden } from '../../hooks/useGardenState';
-import { rowColFromCellId, getCellBounds, MAP_WIDTH, MAP_HEIGHT } from '../../utils/gridMath';
+import { rowColFromCellId, getCellBounds, MAP_WIDTH } from '../../utils/gridMath';
 
 export function MapCanvas() {
   const containerRef = useRef<HTMLDivElement>(null);
