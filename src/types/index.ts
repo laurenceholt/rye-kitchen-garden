@@ -66,6 +66,8 @@ export interface UserCorrection {
 export interface UserCorrections {
   version: number;
   corrections: Record<string, UserCorrection>;
+  addedPlantings: Record<string, CellPlanting[]>;
+  deletedPlantingIds: string[];
 }
 
 export interface BOMEntry {

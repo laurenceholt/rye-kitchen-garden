@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { gridAssignments, gridCellMap } from '../../data/gridAssignments';
+import { gridAssignments } from '../../data/gridAssignments';
 import { plantDatabaseMap } from '../../data/plantDatabase';
 import { deriveCompatibility, getCellCompatibilityScore } from '../../data/companionData';
 import { useGarden } from '../../hooks/useGardenState';
@@ -12,17 +12,18 @@ export function CompanionAnalysis() {
   const [selectedCellId, setSelectedCellId] = useState<string | null>(null);
 
   const cellsWithPlants = useMemo(
-    () => gridAssignments.filter(c => c.plantings.length >= 2),
-    []
+    () => gridAssignments.filter(c => actions.getResolvedPlantings(c.id).length >= 2),
+    [actions]
   );
 
-  const selectedCell = selectedCellId ? gridCellMap.get(selectedCellId) : null;
-
   const analysis = useMemo(() => {
-    if (!selectedCell) return null;
+    if (!selectedCellId) return null;
+
+    const plantings = actions.getResolvedPlantings(selectedCellId);
+    if (plantings.length < 1) return null;
 
     const species: PlantSpecies[] = [];
-    for (const p of selectedCell.plantings) {
+    for (const p of plantings) {
       const id = actions.getResolvedSpeciesId(p.id, p.decodedSpeciesId);
       const sp = plantDatabaseMap.get(id);
       if (sp && !species.find(s => s.id === sp.id)) species.push(sp);
@@ -40,7 +41,7 @@ export function CompanionAnalysis() {
     const score = getCellCompatibilityScore(ratings);
 
     return { species, pairs, score };
-  }, [selectedCell, actions]);
+  }, [selectedCellId, actions]);
 
   return (
     <div className="max-w-[1400px] mx-auto p-6">

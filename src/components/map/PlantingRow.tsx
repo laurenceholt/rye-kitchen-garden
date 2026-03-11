@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pencil } from 'lucide-react';
+import { Pencil, Trash2 } from 'lucide-react';
 import type { CellPlanting } from '../../types';
 import { plantDatabaseMap } from '../../data/plantDatabase';
 import { useGarden } from '../../hooks/useGardenState';
@@ -39,13 +39,22 @@ export function PlantingRow({ planting }: { planting: CellPlanting }) {
             )}
           </div>
         </div>
-        <button
-          onClick={() => setEditing(true)}
-          className="p-1.5 opacity-0 group-hover:opacity-100 hover:bg-garden-100 rounded transition-opacity"
-          title="Edit decoding"
-        >
-          <Pencil className="w-3.5 h-3.5 text-text-secondary" />
-        </button>
+        <div className="flex gap-0.5">
+          <button
+            onClick={() => setEditing(true)}
+            className="p-1.5 opacity-0 group-hover:opacity-100 hover:bg-garden-100 rounded transition-opacity"
+            title="Edit decoding"
+          >
+            <Pencil className="w-3.5 h-3.5 text-text-secondary" />
+          </button>
+          <button
+            onClick={() => actions.deletePlanting(planting.id)}
+            className="p-1.5 opacity-0 group-hover:opacity-100 hover:bg-red-100 rounded transition-opacity"
+            title="Remove planting"
+          >
+            <Trash2 className="w-3.5 h-3.5 text-red-500" />
+          </button>
+        </div>
       </div>
       {editing && (
         <DecodingEditor

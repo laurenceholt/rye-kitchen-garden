@@ -21,7 +21,8 @@ export function BillOfMaterials() {
     const map = new Map<string, BOMEntry>();
 
     for (const cell of gridAssignments) {
-      for (const planting of cell.plantings) {
+      const resolved = actions.getResolvedPlantings(cell.id);
+      for (const planting of resolved) {
         const resolvedId = actions.getResolvedSpeciesId(planting.id, planting.decodedSpeciesId);
         const species = plantDatabaseMap.get(resolvedId);
         if (!species) continue;

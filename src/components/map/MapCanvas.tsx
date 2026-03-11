@@ -1,13 +1,53 @@
-import { useRef, useState, useCallback } from 'react';
+import { useRef, useState, useCallback, useEffect } from 'react';
 import { ZoomIn, ZoomOut, Maximize } from 'lucide-react';
 import { GridOverlay } from './GridOverlay';
+import { useGarden } from '../../hooks/useGardenState';
+import { rowColFromCellId, getCellBounds, MAP_WIDTH, MAP_HEIGHT } from '../../utils/gridMath';
 
 export function MapCanvas() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const { state } = useGarden();
   const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [dragging, setDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+  const [smooth, setSmooth] = useState(false);
+
+  // Auto-zoom to selected cell
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    if (!state.selectedCellId) {
+      setSmooth(true);
+      setZoom(1);
+      setPan({ x: 0, y: 0 });
+      const t = setTimeout(() => setSmooth(false), 400);
+      return () => clearTimeout(t);
+    }
+
+    const { row, col } = rowColFromCellId(state.selectedCellId);
+    const bounds = getCellBounds(row, col);
+    const cellCenterX = bounds.x + bounds.width / 2;
+    const cellCenterY = bounds.y + bounds.height / 2;
+
+    const containerWidth = container.clientWidth;
+    const containerHeight = container.clientHeight;
+    const scale = containerWidth / MAP_WIDTH;
+
+    const targetZoom = 2.5;
+    const renderedCX = cellCenterX * scale;
+    const renderedCY = cellCenterY * scale;
+
+    setSmooth(true);
+    setZoom(targetZoom);
+    setPan({
+      x: containerWidth / 2 - renderedCX * targetZoom,
+      y: containerHeight / 2 - renderedCY * targetZoom,
+    });
+    const t = setTimeout(() => setSmooth(false), 400);
+    return () => clearTimeout(t);
+  }, [state.selectedCellId]);
 
   const handleWheel = useCallback((e: React.WheelEvent) => {
     e.preventDefault();
@@ -29,8 +69,10 @@ export function MapCanvas() {
   const handleMouseUp = useCallback(() => setDragging(false), []);
 
   const resetView = useCallback(() => {
+    setSmooth(true);
     setZoom(1);
     setPan({ x: 0, y: 0 });
+    setTimeout(() => setSmooth(false), 400);
   }, []);
 
   return (
@@ -72,9 +114,10 @@ export function MapCanvas() {
         onMouseLeave={handleMouseUp}
       >
         <div
-          className="relative origin-top-left transition-transform duration-100"
+          className="relative origin-top-left"
           style={{
             transform: `scale(${zoom}) translate(${pan.x / zoom}px, ${pan.y / zoom}px)`,
+            transition: smooth ? 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)' : 'transform 0.1s',
           }}
         >
           <img
