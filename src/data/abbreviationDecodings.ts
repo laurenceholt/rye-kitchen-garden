@@ -31,6 +31,18 @@ export const abbreviationDecodings: AbbreviationDecoding[] = [
   { abbreviation: 'rattlesnake', speciesId: 'rattlesnake-master', confidence: 'high' },
   { abbreviation: 'echinops', speciesId: 'echinops', confidence: 'high' },
   { abbreviation: 'verbena b', speciesId: 'verbena-bonariensis', confidence: 'high' },
+  { abbreviation: 'geum', speciesId: 'geum', confidence: 'high' },
+  { abbreviation: 'tang', speciesId: 'tansy', confidence: 'medium', notes: 'Likely Tanacetum (tansy)' },
+  { abbreviation: 'liatris ligul', speciesId: 'liatris-ligulistylis', confidence: 'high', notes: 'Liatris ligulistylis - Meadow Blazing Star' },
+  { abbreviation: 'knautia macedon', speciesId: 'knautia-macedo', confidence: 'high', notes: 'Knautia macedonica' },
+  { abbreviation: 'liatris spic', speciesId: 'liatris', confidence: 'high', notes: 'Liatris spicata' },
+  { abbreviation: 'jap. anem', speciesId: 'japanese-anemone', confidence: 'high' },
+  { abbreviation: 'echinops exaltus', speciesId: 'echinops-exaltus', confidence: 'high' },
+  { abbreviation: 'poppy', speciesId: 'poppy', confidence: 'high' },
+  { abbreviation: 'salvia nem', speciesId: 'salvia-nemorosa', confidence: 'high' },
+  { abbreviation: 'salv. LSp', speciesId: 'little-spire', confidence: 'high', notes: "Salvia nemorosa 'Little Spire'" },
+  { abbreviation: '*rattlesnake snake', speciesId: 'rattlesnake-master', confidence: 'high' },
+  { abbreviation: 'salvia NC', speciesId: 'nepeta', confidence: 'medium', notes: 'Could be Nepeta cataria or Salvia variant' },
 
   // MEDIUM CONFIDENCE
   { abbreviation: 'JSBF', speciesId: 'joe-pye-weed', confidence: 'medium', alternateInterpretations: ['japanese-painted-fern'], notes: 'Possibly Joe-Pye Short Butterfly Form or Japanese Silver Butterfly Fern' },

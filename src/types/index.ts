@@ -73,6 +73,7 @@ export interface BOMEntry {
   species: PlantSpecies;
   totalQuantity: number;
   cellLocations: string[];
+  abbreviations: string[];
   estimatedTotalCost: number;
   confidence: Confidence;
 }

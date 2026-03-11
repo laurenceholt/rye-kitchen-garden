@@ -4,6 +4,7 @@ export function generateCSV(entries: BOMEntry[]): string {
   const headers = [
     'Common Name',
     'Scientific Name',
+    'Map Codes',
     'Category',
     'Quantity',
     'Grid Locations',
@@ -21,6 +22,7 @@ export function generateCSV(entries: BOMEntry[]): string {
   const rows = entries.map(e => [
     e.species.commonName,
     e.species.scientificName,
+    e.abbreviations.join(', '),
     e.species.category,
     e.totalQuantity,
     e.cellLocations.join('; '),

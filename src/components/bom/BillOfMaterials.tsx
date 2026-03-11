@@ -27,10 +27,14 @@ export function BillOfMaterials() {
         if (!species) continue;
 
         const existing = map.get(resolvedId);
+        const abbr = planting.abbreviation;
         if (existing) {
           existing.totalQuantity += planting.quantity;
           if (!existing.cellLocations.includes(cell.id)) {
             existing.cellLocations.push(cell.id);
+          }
+          if (!existing.abbreviations.includes(abbr)) {
+            existing.abbreviations.push(abbr);
           }
           existing.estimatedTotalCost = existing.totalQuantity * species.estimatedCostPerPlant;
           if (confidenceRank[planting.confidence] < confidenceRank[existing.confidence]) {
@@ -42,6 +46,7 @@ export function BillOfMaterials() {
             species,
             totalQuantity: planting.quantity,
             cellLocations: [cell.id],
+            abbreviations: [abbr],
             estimatedTotalCost: planting.quantity * species.estimatedCostPerPlant,
             confidence: planting.confidence,
           });
@@ -60,7 +65,8 @@ export function BillOfMaterials() {
         e =>
           e.species.commonName.toLowerCase().includes(q) ||
           e.species.scientificName.toLowerCase().includes(q) ||
-          e.species.category.includes(q)
+          e.species.category.includes(q) ||
+          e.abbreviations.some(a => a.toLowerCase().includes(q))
       );
     }
     result.sort((a, b) => {
@@ -157,6 +163,13 @@ export function BillOfMaterials() {
                   <td className="px-4 py-3">
                     <div className="font-medium">{entry.species.commonName}</div>
                     <div className="text-xs text-text-secondary italic">{entry.species.scientificName}</div>
+                    <div className="flex flex-wrap gap-1 mt-1">
+                      {entry.abbreviations.map(abbr => (
+                        <span key={abbr} className="font-mono text-[10px] bg-gray-100 text-text-secondary px-1.5 py-0.5 rounded">
+                          {abbr}
+                        </span>
+                      ))}
+                    </div>
                   </td>
                   <td className="px-4 py-3">
                     <span className="capitalize text-xs bg-gray-100 text-text-secondary px-2 py-0.5 rounded-full">
