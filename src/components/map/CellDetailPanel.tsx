@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { X, Building2, Plus, Search } from 'lucide-react';
+import { X, Building2, Plus, Search, Eye } from 'lucide-react';
 import type { Confidence } from '../../types';
 import { useGarden } from '../../hooks/useGardenState';
 import { gridCellMap } from '../../data/gridAssignments';
-import { plantDatabase } from '../../data/plantDatabase';
 import { searchPlants } from '../../utils/searchPlants';
 import { PlantingRow } from './PlantingRow';
+import { CellVisualizer } from './CellVisualizer';
 
 const structureLabels: Record<string, string> = {
   'hot-tub': 'Hot Tub',
@@ -21,6 +21,7 @@ const structureLabels: Record<string, string> = {
 export function CellDetailPanel() {
   const { state, actions } = useGarden();
   const [adding, setAdding] = useState(false);
+  const [showVisualizer, setShowVisualizer] = useState(false);
   const [newAbbr, setNewAbbr] = useState('');
   const [newQuery, setNewQuery] = useState('');
   const [newQty, setNewQty] = useState(1);
@@ -35,7 +36,7 @@ export function CellDetailPanel() {
   const rowLabel = String.fromCharCode(65 + cell.row);
   const colLabel = cell.col + 1;
 
-  const searchResults = newQuery.trim() ? searchPlants(newQuery, plantDatabase).slice(0, 6) : [];
+  const searchResults = newQuery.trim() ? searchPlants(newQuery, actions.getAllPlants()).slice(0, 6) : [];
 
   const handleAddPlanting = (speciesId: string) => {
     const cellId = state.selectedCellId!;
@@ -54,18 +55,30 @@ export function CellDetailPanel() {
   };
 
   return (
-    <div className="w-80 bg-surface border-l border-border flex flex-col h-full overflow-hidden shrink-0">
+    <div className="w-[416px] bg-surface border-l border-border flex flex-col h-full overflow-hidden shrink-0">
       <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-garden-50">
         <div>
           <h2 className="font-serif font-bold text-lg text-garden-700">Cell {cell.id}</h2>
           <p className="text-xs text-text-secondary">Row {rowLabel}, Column {colLabel}</p>
         </div>
-        <button
-          onClick={() => actions.selectCell(null)}
-          className="p-1.5 hover:bg-garden-100 rounded-lg"
-        >
-          <X className="w-4 h-4" />
-        </button>
+        <div className="flex items-center gap-1">
+          {plantings.length > 0 && (
+            <button
+              onClick={() => setShowVisualizer(true)}
+              className="flex items-center gap-1 px-2 py-1 text-xs font-medium text-garden-600 bg-garden-100 rounded-lg hover:bg-garden-200 transition-colors"
+              title="3D visualization"
+            >
+              <Eye className="w-3.5 h-3.5" />
+              Visualize
+            </button>
+          )}
+          <button
+            onClick={() => actions.selectCell(null)}
+            className="p-1.5 hover:bg-garden-100 rounded-lg"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        </div>
       </div>
 
       {cell.structures.length > 0 && (
@@ -88,11 +101,11 @@ export function CellDetailPanel() {
         {plantings.length > 0 ? (
           <div className="p-2">
             <p className="text-xs font-medium text-text-secondary px-3 py-1.5">
-              PLANTINGS ({plantings.length})
+              PLANTINGS ({plantings.reduce((s, p) => s + p.quantity, 0)})
             </p>
             <div className="divide-y divide-border/50">
               {plantings.map(p => (
-                <PlantingRow key={p.id} planting={p} />
+                <PlantingRow key={p.id} planting={p} cellId={state.selectedCellId!} />
               ))}
             </div>
           </div>
@@ -189,6 +202,14 @@ export function CellDetailPanel() {
           </div>
         )}
       </div>
+
+      {showVisualizer && (
+        <CellVisualizer
+          cellId={state.selectedCellId!}
+          plantings={plantings}
+          onClose={() => setShowVisualizer(false)}
+        />
+      )}
     </div>
   );
 }

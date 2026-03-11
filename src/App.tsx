@@ -1,8 +1,9 @@
 import { useState, useCallback, useMemo } from 'react';
-import type { GardenState, TabId, Confidence, UserCorrections, CellPlanting } from './types';
+import type { GardenState, TabId, Confidence, UserCorrections, CellPlanting, PlantSpecies } from './types';
 import { GardenContext, defaultCorrections } from './hooks/useGardenState';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { gridCellMap, gridAssignments } from './data/gridAssignments';
+import { plantDatabase, plantDatabaseMap } from './data/plantDatabase';
 import { Header } from './components/layout/Header';
 import { TabNav } from './components/layout/TabNav';
 import { GardenMap } from './components/map/GardenMap';
@@ -18,13 +19,44 @@ export default function App() {
     'garden-map-corrections-v2',
     defaultCorrections
   );
+  const [customPlants, setCustomPlants] = useLocalStorage<PlantSpecies[]>(
+    'garden-custom-plants-v1',
+    []
+  );
 
-  const saveCorrection = useCallback((plantingId: string, speciesId: string, notes?: string) => {
+  const allPlantsMap = useMemo(() => {
+    const map = new Map(plantDatabaseMap);
+    for (const cp of customPlants) {
+      if (!map.has(cp.id)) map.set(cp.id, cp);
+    }
+    return map;
+  }, [customPlants]);
+
+  const allPlants = useMemo(() => {
+    const ids = new Set(plantDatabase.map(p => p.id));
+    const merged = [...plantDatabase];
+    for (const cp of customPlants) {
+      if (!ids.has(cp.id)) merged.push(cp);
+    }
+    return merged;
+  }, [customPlants]);
+
+  const addCustomPlant = useCallback((plant: PlantSpecies) => {
+    setCustomPlants(prev => {
+      if (prev.find(p => p.id === plant.id)) return prev;
+      return [...prev, plant];
+    });
+  }, [setCustomPlants]);
+
+  const getAllPlants = useCallback(() => allPlants, [allPlants]);
+  const getPlantById = useCallback((id: string) => allPlantsMap.get(id), [allPlantsMap]);
+
+  const saveCorrection = useCallback((plantingId: string, speciesId: string, notes?: string, confidence?: Confidence) => {
     setUserCorrections(prev => ({
       ...prev,
       corrections: {
         ...prev.corrections,
-        [plantingId]: { speciesId, notes, timestamp: Date.now() },
+        [plantingId]: { speciesId, confidence: confidence ?? 'high', notes, timestamp: Date.now() },
       },
     }));
   }, [setUserCorrections]);
@@ -67,23 +99,47 @@ export default function App() {
     }));
   }, [setUserCorrections]);
 
+  const updatePlanting = useCallback((plantingId: string, updates: {
+    speciesId?: string;
+    abbreviation?: string;
+    quantity?: number;
+    confidence?: Confidence;
+    notes?: string;
+  }) => {
+    setUserCorrections(prev => {
+      const existing = prev.corrections[plantingId];
+      return {
+        ...prev,
+        corrections: {
+          ...prev.corrections,
+          [plantingId]: {
+            speciesId: updates.speciesId ?? existing?.speciesId ?? '',
+            abbreviation: updates.abbreviation,
+            quantity: updates.quantity,
+            confidence: updates.confidence ?? 'high',
+            notes: updates.notes,
+            timestamp: Date.now(),
+          },
+        },
+      };
+    });
+  }, [setUserCorrections]);
+
   const bulkCorrectByAbbreviation = useCallback((abbreviation: string, speciesId: string, notes?: string) => {
     const abbrLower = abbreviation.toLowerCase();
     setUserCorrections(prev => {
       const newCorrections = { ...prev.corrections };
-      // Scan all cells for plantings with matching abbreviation
       for (const cell of gridAssignments) {
         for (const p of cell.plantings) {
           if (p.abbreviation.toLowerCase() === abbrLower) {
-            newCorrections[p.id] = { speciesId, notes, timestamp: Date.now() };
+            newCorrections[p.id] = { speciesId, confidence: 'high', notes, timestamp: Date.now() };
           }
         }
       }
-      // Also scan added plantings
       for (const cellPlantings of Object.values(prev.addedPlantings)) {
         for (const p of cellPlantings) {
           if (p.abbreviation.toLowerCase() === abbrLower) {
-            newCorrections[p.id] = { speciesId, notes, timestamp: Date.now() };
+            newCorrections[p.id] = { speciesId, confidence: 'high', notes, timestamp: Date.now() };
           }
         }
       }
@@ -96,7 +152,19 @@ export default function App() {
     const base = cell ? cell.plantings : [];
     const added = userCorrections.addedPlantings[cellId] || [];
     const deleted = new Set(userCorrections.deletedPlantingIds);
-    return [...base, ...added].filter(p => !deleted.has(p.id));
+    return [...base, ...added]
+      .filter(p => !deleted.has(p.id))
+      .map(p => {
+        const correction = userCorrections.corrections[p.id];
+        if (!correction) return p;
+        return {
+          ...p,
+          decodedSpeciesId: correction.speciesId || p.decodedSpeciesId,
+          abbreviation: correction.abbreviation ?? p.abbreviation,
+          quantity: correction.quantity ?? p.quantity,
+          confidence: correction.confidence ?? p.confidence,
+        };
+      });
   }, [userCorrections]);
 
   const state: GardenState = useMemo(() => ({
@@ -118,9 +186,13 @@ export default function App() {
     isUserCorrected,
     addPlanting,
     deletePlanting,
+    updatePlanting,
     bulkCorrectByAbbreviation,
     getResolvedPlantings,
-  }), [toggleConfidenceFilter, saveCorrection, resetCorrection, getResolvedSpeciesId, isUserCorrected, addPlanting, deletePlanting, bulkCorrectByAbbreviation, getResolvedPlantings]);
+    addCustomPlant,
+    getAllPlants,
+    getPlantById,
+  }), [toggleConfidenceFilter, saveCorrection, resetCorrection, getResolvedSpeciesId, isUserCorrected, addPlanting, deletePlanting, updatePlanting, bulkCorrectByAbbreviation, getResolvedPlantings, addCustomPlant, getAllPlants, getPlantById]);
 
   return (
     <GardenContext.Provider value={{ state, actions }}>

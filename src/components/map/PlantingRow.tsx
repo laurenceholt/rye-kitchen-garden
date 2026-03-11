@@ -1,18 +1,17 @@
 import { useState } from 'react';
 import { Pencil, Trash2 } from 'lucide-react';
 import type { CellPlanting } from '../../types';
-import { plantDatabaseMap } from '../../data/plantDatabase';
 import { useGarden } from '../../hooks/useGardenState';
 import { ConfidenceBadge } from './ConfidenceBadge';
-import { DecodingEditor } from './DecodingEditor';
+import { PlantingEditor } from './PlantingEditor';
 
-export function PlantingRow({ planting }: { planting: CellPlanting }) {
+export function PlantingRow({ planting, cellId }: { planting: CellPlanting; cellId: string }) {
   const [editing, setEditing] = useState(false);
   const { actions } = useGarden();
 
   const resolvedId = actions.getResolvedSpeciesId(planting.id, planting.decodedSpeciesId);
   const isEdited = actions.isUserCorrected(planting.id);
-  const species = plantDatabaseMap.get(resolvedId);
+  const species = actions.getPlantById(resolvedId);
 
   return (
     <>
@@ -43,7 +42,7 @@ export function PlantingRow({ planting }: { planting: CellPlanting }) {
           <button
             onClick={() => setEditing(true)}
             className="p-1.5 opacity-0 group-hover:opacity-100 hover:bg-garden-100 rounded transition-opacity"
-            title="Edit decoding"
+            title="Edit planting"
           >
             <Pencil className="w-3.5 h-3.5 text-text-secondary" />
           </button>
@@ -57,10 +56,9 @@ export function PlantingRow({ planting }: { planting: CellPlanting }) {
         </div>
       </div>
       {editing && (
-        <DecodingEditor
-          plantingId={planting.id}
-          abbreviation={planting.abbreviation}
-          currentSpeciesId={resolvedId}
+        <PlantingEditor
+          cellId={cellId}
+          planting={planting}
           onClose={() => setEditing(false)}
         />
       )}

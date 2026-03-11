@@ -59,6 +59,9 @@ export interface GridCell {
 
 export interface UserCorrection {
   speciesId: string;
+  abbreviation?: string;
+  quantity?: number;
+  confidence?: Confidence;
   notes?: string;
   timestamp: number;
 }

@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react';
 import { gridAssignments } from '../../data/gridAssignments';
-import { plantDatabaseMap } from '../../data/plantDatabase';
 import { deriveCompatibility, getCellCompatibilityScore } from '../../data/companionData';
 import { useGarden } from '../../hooks/useGardenState';
 import { CompatibilityScore } from './CompatibilityScore';
@@ -11,10 +10,34 @@ export function CompanionAnalysis() {
   const { actions } = useGarden();
   const [selectedCellId, setSelectedCellId] = useState<string | null>(null);
 
-  const cellsWithPlants = useMemo(
-    () => gridAssignments.filter(c => actions.getResolvedPlantings(c.id).length >= 2),
-    [actions]
-  );
+  // Compute per-cell scores for all cells with 2+ species
+  const cellsWithScores = useMemo(() => {
+    return gridAssignments
+      .map(cell => {
+        const plantings = actions.getResolvedPlantings(cell.id);
+        const species: PlantSpecies[] = [];
+        for (const p of plantings) {
+          const id = actions.getResolvedSpeciesId(p.id, p.decodedSpeciesId);
+          const sp = actions.getPlantById(id);
+          if (sp && !species.find(s => s.id === sp.id)) species.push(sp);
+        }
+
+        if (species.length < 2) return null;
+
+        const ratings: CompatibilityRating[] = [];
+        for (let i = 0; i < species.length; i++) {
+          for (let j = i + 1; j < species.length; j++) {
+            ratings.push(deriveCompatibility(species[i], species[j]).rating);
+          }
+        }
+
+        const score = getCellCompatibilityScore(ratings);
+        const totalPlants = plantings.reduce((s, p) => s + p.quantity, 0);
+        return { cell, score, speciesCount: species.length, totalPlants };
+      })
+      .filter((item): item is NonNullable<typeof item> => item !== null)
+      .sort((a, b) => a.score - b.score); // worst first
+  }, [actions]);
 
   const analysis = useMemo(() => {
     if (!selectedCellId) return null;
@@ -25,7 +48,7 @@ export function CompanionAnalysis() {
     const species: PlantSpecies[] = [];
     for (const p of plantings) {
       const id = actions.getResolvedSpeciesId(p.id, p.decodedSpeciesId);
-      const sp = plantDatabaseMap.get(id);
+      const sp = actions.getPlantById(id);
       if (sp && !species.find(s => s.id === sp.id)) species.push(sp);
     }
 
@@ -48,32 +71,41 @@ export function CompanionAnalysis() {
       <div className="mb-6">
         <h2 className="font-serif text-2xl font-bold text-garden-700">Companion Planting Analysis</h2>
         <p className="text-sm text-text-secondary mt-1">
-          Select a grid cell to analyze compatibility between its plantings
+          Cells sorted by compatibility score (lowest first) to help you focus on problem areas
         </p>
       </div>
 
       <div className="flex gap-6">
         {/* Cell selector */}
-        <div className="w-64 shrink-0">
+        <div className="w-72 shrink-0">
           <h3 className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-2">
-            Cells with 2+ species ({cellsWithPlants.length})
+            Cells with 2+ species ({cellsWithScores.length})
           </h3>
           <div className="space-y-1 max-h-[70vh] overflow-y-auto pr-1">
-            {cellsWithPlants.map(cell => {
+            {cellsWithScores.map(({ cell, score, speciesCount }) => {
               const isSelected = selectedCellId === cell.id;
+              const scoreColor = score >= 7 ? 'text-emerald-600' :
+                                 score >= 5 ? 'text-amber-600' : 'text-red-600';
+              const scoreBg = score >= 7 ? 'bg-emerald-100' :
+                              score >= 5 ? 'bg-amber-100' : 'bg-red-100';
               return (
                 <button
                   key={cell.id}
                   onClick={() => setSelectedCellId(isSelected ? null : cell.id)}
-                  className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors ${
+                  className={`w-full text-left px-3 py-2 rounded-lg text-sm transition-colors flex items-center justify-between ${
                     isSelected
                       ? 'bg-garden-100 text-garden-700 border border-garden-300'
                       : 'hover:bg-gray-50 border border-transparent'
                   }`}
                 >
-                  <span className="font-mono font-bold">{cell.id}</span>
-                  <span className="text-text-secondary ml-2">
-                    {cell.plantings.length} plantings
+                  <span>
+                    <span className="font-mono font-bold">{cell.id}</span>
+                    <span className="text-text-secondary ml-2">
+                      {speciesCount} species
+                    </span>
+                  </span>
+                  <span className={`text-xs font-bold px-1.5 py-0.5 rounded ${scoreBg} ${scoreColor}`}>
+                    {score}
                   </span>
                 </button>
               );

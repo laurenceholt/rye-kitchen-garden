@@ -2,7 +2,6 @@ import { useMemo, useState } from 'react';
 import { Download, Search, ArrowUpDown } from 'lucide-react';
 import type { BOMEntry, Confidence } from '../../types';
 import { gridAssignments } from '../../data/gridAssignments';
-import { plantDatabaseMap } from '../../data/plantDatabase';
 import { useGarden } from '../../hooks/useGardenState';
 import { generateCSV, downloadCSV } from '../../utils/csvExport';
 import { ConfidenceBadge } from '../map/ConfidenceBadge';
@@ -24,7 +23,7 @@ export function BillOfMaterials() {
       const resolved = actions.getResolvedPlantings(cell.id);
       for (const planting of resolved) {
         const resolvedId = actions.getResolvedSpeciesId(planting.id, planting.decodedSpeciesId);
-        const species = plantDatabaseMap.get(resolvedId);
+        const species = actions.getPlantById(resolvedId);
         if (!species) continue;
 
         const existing = map.get(resolvedId);

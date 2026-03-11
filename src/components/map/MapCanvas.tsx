@@ -2,7 +2,7 @@ import { useRef, useState, useCallback, useEffect } from 'react';
 import { ZoomIn, ZoomOut, Maximize } from 'lucide-react';
 import { GridOverlay } from './GridOverlay';
 import { useGarden } from '../../hooks/useGardenState';
-import { rowColFromCellId, getCellBounds, MAP_WIDTH } from '../../utils/gridMath';
+import { rowColFromCellId, getCellBounds, MAP_WIDTH, MAP_HEIGHT } from '../../utils/gridMath';
 
 export function MapCanvas() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -15,9 +15,6 @@ export function MapCanvas() {
 
   // Auto-zoom to selected cell
   useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
     if (!state.selectedCellId) {
       setSmooth(true);
       setZoom(1);
@@ -26,27 +23,41 @@ export function MapCanvas() {
       return () => clearTimeout(t);
     }
 
-    const { row, col } = rowColFromCellId(state.selectedCellId);
-    const bounds = getCellBounds(row, col);
-    const cellCenterX = bounds.x + bounds.width / 2;
-    const cellCenterY = bounds.y + bounds.height / 2;
+    // Delay until after layout completes (CellDetailPanel may have just appeared/resized)
+    const rafId = requestAnimationFrame(() => {
+      const container = containerRef.current;
+      if (!container) return;
 
-    const containerWidth = container.clientWidth;
-    const containerHeight = container.clientHeight;
-    const scale = containerWidth / MAP_WIDTH;
+      const { row, col } = rowColFromCellId(state.selectedCellId!);
+      const bounds = getCellBounds(row, col);
+      const cellCenterX = bounds.x + bounds.width / 2;
+      const cellCenterY = bounds.y + bounds.height / 2;
 
-    const targetZoom = 2.5;
-    const renderedCX = cellCenterX * scale;
-    const renderedCY = cellCenterY * scale;
+      const containerWidth = container.clientWidth;
+      const containerHeight = container.clientHeight;
+      if (!containerWidth || !containerHeight) return;
 
-    setSmooth(true);
-    setZoom(targetZoom);
-    setPan({
-      x: containerWidth / 2 - renderedCX * targetZoom,
-      y: containerHeight / 2 - renderedCY * targetZoom,
+      const scale = containerWidth / MAP_WIDTH;
+      const targetZoom = 2.5;
+      const renderedCX = cellCenterX * scale;
+      const renderedCY = cellCenterY * scale;
+
+      let panX = containerWidth / 2 - renderedCX * targetZoom;
+      let panY = containerHeight / 2 - renderedCY * targetZoom;
+
+      // Clamp pan so map is never pushed entirely out of view
+      const mapW = containerWidth * targetZoom;
+      const mapH = (MAP_HEIGHT / MAP_WIDTH) * containerWidth * targetZoom;
+      panX = Math.max(containerWidth - mapW, Math.min(0, panX));
+      panY = Math.max(containerHeight - mapH, Math.min(0, panY));
+
+      setSmooth(true);
+      setZoom(targetZoom);
+      setPan({ x: panX, y: panY });
+      setTimeout(() => setSmooth(false), 400);
     });
-    const t = setTimeout(() => setSmooth(false), 400);
-    return () => clearTimeout(t);
+
+    return () => cancelAnimationFrame(rafId);
   }, [state.selectedCellId]);
 
   const handleWheel = useCallback((e: React.WheelEvent) => {
