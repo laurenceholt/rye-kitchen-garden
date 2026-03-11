@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-garden-50: #f0f7ee;
+  --color-garden-100: #dcefd8;
+  --color-garden-200: #b9dfb1;
+  --color-garden-300: #8cc880;
+  --color-garden-400: #5dab4e;
+  --color-garden-500: #2d5a27;
+  --color-garden-600: #234a1f;
+  --color-garden-700: #1a3917;
+  --color-garden-800: #122a10;
+  --color-garden-900: #0a1b09;
+
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-200: #fde68a;
+  --color-amber-400: #fbbf24;
+  --color-amber-600: #d97706;
+  --color-amber-800: #92400e;
+
+  --color-surface: #ffffff;
+  --color-bg: #fafaf5;
+  --color-border: #e5e5dc;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #6b7280;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  .print-full-width { width: 100% !important; max-width: none !important; }
+}
