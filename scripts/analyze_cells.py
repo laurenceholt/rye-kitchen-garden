@@ -16,8 +16,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 API_KEY = os.environ.get("OPENAI_API_KEY", "")
 IMAGE_PATH = "/Users/laurenceholt/Documents/Claude code projects/rye-kg/updated garden new 8.png"
 OUTPUT_DIR = "/Users/laurenceholt/Documents/Claude code projects/rye-kg/cell-analysis"
-RESULTS_FILE = os.path.join(OUTPUT_DIR, "analysis_results.json")
-MODEL = "gpt-5.4"
+RESULTS_FILE = os.path.join(OUTPUT_DIR, "analysis_results_pro.json")
+MODEL = "gpt-5.4-pro"
 
 # Grid dimensions (source image is 4320x3165)
 IMG_WIDTH = 4320
@@ -28,7 +28,7 @@ CELL_W = IMG_WIDTH / GRID_COLS   # 432
 CELL_H = IMG_HEIGHT / GRID_ROWS  # 316.5
 PADDING = 40  # Extra pixels around each cell for label context
 
-MAX_WORKERS = 5
+MAX_WORKERS = 1
 
 
 def cell_id(row, col):
@@ -94,27 +94,23 @@ def analyze_cell(client, cell_img_b64, row, col):
         col_num=col + 1,
     )
 
-    response = client.chat.completions.create(
+    response = client.responses.create(
         model=MODEL,
-        messages=[
+        input=[
             {
                 "role": "user",
                 "content": [
-                    {"type": "text", "text": prompt},
+                    {"type": "input_text", "text": prompt},
                     {
-                        "type": "image_url",
-                        "image_url": {
-                            "url": f"data:image/jpeg;base64,{cell_img_b64}",
-                            "detail": "high",
-                        },
+                        "type": "input_image",
+                        "image_url": f"data:image/jpeg;base64,{cell_img_b64}",
                     },
                 ],
             }
         ],
-        max_completion_tokens=4000,
     )
 
-    raw = response.choices[0].message.content.strip()
+    raw = response.output_text.strip()
     # Strip markdown fences if present
     if raw.startswith("```"):
         raw = raw.split("\n", 1)[1]

@@ -1,0 +1,2687 @@
+{
+  "A1": {
+    "cellId": "A1",
+    "totalCircles": 0,
+    "structures": [
+      "possible boundary/property linework: thin red vertical lines, one thick teal vertical line, and a pale green diagonal line"
+    ],
+    "plantings": [],
+    "notes": "No planting-marker circles have centers within this cell. Visible text such as 'coreopsis mix...', 'White-flower...', 'Deschampsia', and 'Karl Foerster' appears to belong to neighboring areas rather than to any circles in this cell."
+  },
+  "A2": {
+    "cellId": "A2",
+    "totalCircles": 0,
+    "structures": [],
+    "plantings": [],
+    "notes": "No planting-marker circles are visible with centers inside this cell. The visible black text appears to be legend/annotation text rather than labels attached to circles. Several red parallel lines cross the crop, but no specific non-plant structure is clearly identifiable from this view."
+  },
+  "A3": {
+    "cellId": "A3",
+    "totalCircles": 0,
+    "structures": [],
+    "plantings": [],
+    "notes": "No planting-marker circles are visible within the cell. The crop shows large black text fragments (including '...purple asters', '...echinacea', and 'verbena bonariensis') that appear to be descriptive note text rather than labels attached to individual circles. Multiple parallel vertical red lines are visible in the background, but no specific non-plant structure can be confidently identified from this crop alone."
+  },
+  "A4": {
+    "cellId": "A4",
+    "totalCircles": 0,
+    "structures": [
+      "partial red-outlined rectangular structure/planter entering from the bottom center of the cell"
+    ],
+    "plantings": [],
+    "notes": "No circle planting markers are visible within the cell boundaries. A black handwritten mark appears inside the lower rectangular feature but does not appear to be a planting circle. Parallel red lines at the far left and a partial red rectangle at the top are visible mainly as neighboring-context features."
+  },
+  "A5": {
+    "cellId": "A5",
+    "totalCircles": 17,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "sprinter BX",
+        "count": 1,
+        "description": "large white/light-gray circle with dark green outline in the upper-left area"
+      },
+      {
+        "label": "SA grass",
+        "count": 5,
+        "description": "white-filled circles with blue or light-green outlines; several overlap, including one partially cropped at the right side"
+      },
+      {
+        "label": "verbena b",
+        "count": 1,
+        "description": "white-filled blue-outlined circle near the top center"
+      },
+      {
+        "label": "knautia macedon",
+        "count": 1,
+        "description": "tan/gray filled circle with dark outline in the upper middle"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "solid violet/purple filled circle near the upper-right center with no readable text"
+      },
+      {
+        "label": "geum tang",
+        "count": 3,
+        "description": "overlapping orange/yellow outlined circles in the left-center"
+      },
+      {
+        "label": "liatris ligul",
+        "count": 2,
+        "description": "purple-outlined white circles in the center-right/lower-center area"
+      },
+      {
+        "label": "liatris spic",
+        "count": 1,
+        "description": "purple-outlined white circle in the lower-left area"
+      },
+      {
+        "label": "*rattle-snak",
+        "count": 1,
+        "description": "large pale-green outlined white circle in the lower middle-left"
+      },
+      {
+        "label": "*stipa barbata",
+        "count": 1,
+        "description": "large beige/olive outlined white circle in the lower-right area"
+      }
+    ],
+    "notes": "Counted only circles whose centers appear inside the approximate cell bounds (about 40 px inset from the crop edges). Several additional circles are partially visible along the right and bottom edges but appear centered outside the cell."
+  },
+  "A6": {
+    "cellId": "A6",
+    "totalCircles": 23,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "verbena b",
+        "count": 4,
+        "description": "large white circles with blue outlines along the top edge; one at far right is slightly cropped"
+      },
+      {
+        "label": "SA grass",
+        "count": 4,
+        "description": "small white circles with green outlines; some are partly overlapped by larger plants"
+      },
+      {
+        "label": "baltic parsley",
+        "count": 2,
+        "description": "medium white circles with green outlines"
+      },
+      {
+        "label": "liatris ligul",
+        "count": 1,
+        "description": "medium white circle with purple outline near left-center"
+      },
+      {
+        "label": "knautia macedor",
+        "count": 3,
+        "description": "medium mauve/purple-outlined circles with black text, heavily overlapped"
+      },
+      {
+        "label": "ceph gig",
+        "count": 1,
+        "description": "large white circle with yellow outline near lower center"
+      },
+      {
+        "label": "salvia NC",
+        "count": 2,
+        "description": "medium white circles with purple outlines on the right half"
+      },
+      {
+        "label": "sea holly",
+        "count": 2,
+        "description": "large white circles with blue outlines on the right side"
+      },
+      {
+        "label": "verbena hastata",
+        "count": 1,
+        "description": "large white circle with pink outline at lower right"
+      },
+      {
+        "label": "unlabeled",
+        "count": 3,
+        "description": "solid violet/purple filled circles with no readable label in this crop"
+      }
+    ],
+    "notes": "No non-plant structures are visible. Count is based on centers falling within the inner cell area (about 40 px inset from each image edge); partial circles in the outer context bands were excluded."
+  },
+  "A7": {
+    "cellId": "A7",
+    "totalCircles": 0,
+    "structures": [
+      "vertical yellow/gold line with a teal edge near the left side (possible property line or border)"
+    ],
+    "plantings": [],
+    "notes": "No circle centers appear within the cell boundaries. Partial blue- and red-outlined planting circles are visible along the far left context area, but their centers appear outside A7. The large black text on the right looks like legend/list text rather than labels attached to plant markers in this cell."
+  },
+  "A8": {
+    "cellId": "A8",
+    "totalCircles": 0,
+    "structures": [],
+    "plantings": [],
+    "notes": "No planting circles are visible within the cell. The crop shows only large text/plant-list wording (legend-style text), which should not be counted as plantings or structures."
+  },
+  "A9": {
+    "cellId": "A9",
+    "totalCircles": 1,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "cherry",
+        "count": 1,
+        "description": "large pale green/gray outlined circle near the top-right; only the upper arc is clearly visible, with the label inside/just beneath the arc"
+      }
+    ],
+    "notes": "One large partially visible planting circle appears in the top-right and its center appears to fall within the cell. Most other visible text looks like descriptive plant notes (including 'stipa barbata' and grass description) rather than labels tied to counted circles."
+  },
+  "A10": {
+    "cellId": "A10",
+    "totalCircles": 0,
+    "structures": [],
+    "plantings": [],
+    "notes": "No planting-marker circles have centers within this cell. A partial green arc is visible at the upper left, but its center appears outside the cell boundary. Most of the crop is descriptive text and vertical colored lines rather than countable plant circles."
+  },
+  "B1": {
+    "cellId": "B1",
+    "totalCircles": 0,
+    "structures": [
+      "planters"
+    ],
+    "plantings": [],
+    "notes": "No clearly identifiable planting-marker circles have centers within this cell. The visible non-plant feature is a red-outlined planter area labeled 'PLANTERS' with 'potato...' text; other visible lines appear to be boundaries/edges rather than plant circles."
+  },
+  "B2": {
+    "cellId": "B2",
+    "totalCircles": 0,
+    "structures": [
+      "unidentified red rectilinear structure crossing the cell, with multiple parallel vertical and horizontal lines and a small nested square near the lower-left/center"
+    ],
+    "plantings": [],
+    "notes": "No planting-marker circles are visible with centers inside this cell. Partial black annotation text appears along the top edge but does not correspond to circles in the cell."
+  },
+  "B3": {
+    "cellId": "B3",
+    "totalCircles": 0,
+    "structures": [
+      "red rectilinear linework spanning the cell (multiple parallel vertical and horizontal lines)",
+      "nested red square/box feature near the lower-right area"
+    ],
+    "plantings": [],
+    "notes": "No planting-marker centers are visible within the approximate inner cell boundary. Partial text labels are visible near the top-left and right edges, and partial green circles appear at the bottom-right edge, but their centers appear outside this cell."
+  },
+  "B4": {
+    "cellId": "B4",
+    "totalCircles": 0,
+    "structures": [
+      "planter"
+    ],
+    "plantings": [],
+    "notes": "No circle centers fall within this cell. A large rectangular planter occupies most of the cell, labeled 'PLANTER' with 'beans' inside. Partial red linework from another structure is visible at the left edge, and partial plant labels/circles from neighboring cells appear along the bottom and right edges."
+  },
+  "B5": {
+    "cellId": "B5",
+    "totalCircles": 18,
+    "structures": [
+      "vertical teal boundary/property line near the left side of the cell"
+    ],
+    "plantings": [
+      {
+        "label": "*stipa barbata",
+        "count": 4,
+        "description": "large tan/beige circles with olive outlines; one is partly cropped at the left edge and two are toward the upper/right side"
+      },
+      {
+        "label": "liatris spic",
+        "count": 2,
+        "description": "medium purple/violet outlined circles near the upper-left/upper-middle area"
+      },
+      {
+        "label": "ECH. PV",
+        "count": 3,
+        "description": "medium to large pale-green outlined circles in the central and lower-central area"
+      },
+      {
+        "label": "salv. LSp",
+        "count": 3,
+        "description": "small gray-lavender outlined circles stacked vertically near the left-center"
+      },
+      {
+        "label": "*rattle snake",
+        "count": 1,
+        "description": "medium green outlined circle near the upper middle, partly overlapped"
+      },
+      {
+        "label": "baltp parsley",
+        "count": 1,
+        "description": "small to medium green outlined circle near the upper-right/center; first word is slightly unclear"
+      },
+      {
+        "label": "ECH PA",
+        "count": 1,
+        "description": "small pale-green outlined circle near the lower-left"
+      },
+      {
+        "label": "SA grass",
+        "count": 1,
+        "description": "small light-green outlined circle near the lower-left/center"
+      },
+      {
+        "label": "knautia macedo",
+        "count": 1,
+        "description": "medium plum/magenta outlined circle near the lower-right/center"
+      },
+      {
+        "label": "rudbeck sub",
+        "count": 1,
+        "description": "large yellow outlined circle at the lower-right"
+      }
+    ],
+    "notes": "Counted only circles whose centers appear inside the inset cell boundary. Excluded the cropped top purple/green circles, the right-edge blue circle, and bottom partial circles whose centers appear outside the cell."
+  },
+  "B6": {
+    "cellId": "B6",
+    "totalCircles": 20,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "STPG",
+        "count": 1,
+        "description": "large dark-green outlined circle near upper left/center"
+      },
+      {
+        "label": "salvia NC",
+        "count": 1,
+        "description": "medium purple-outlined circle near the top"
+      },
+      {
+        "label": "verbena hastata",
+        "count": 1,
+        "description": "large pink/mauve-outlined circle near the top right"
+      },
+      {
+        "label": "baltic parsley",
+        "count": 3,
+        "description": "medium green-outlined circles, one upper-center and two lower-center/right"
+      },
+      {
+        "label": "sprinter BX",
+        "count": 1,
+        "description": "large green-outlined circle near upper center-right"
+      },
+      {
+        "label": "unlabeled",
+        "count": 2,
+        "description": "one small violet/blue filled circle near left-center and one medium tan/beige filled circle near upper right-center"
+      },
+      {
+        "label": "echinops exaltus",
+        "count": 3,
+        "description": "large light-blue outlined circles; one is partly cut by the left edge, with two more fully visible in the left half"
+      },
+      {
+        "label": "ceph gig",
+        "count": 2,
+        "description": "large yellow-outlined circles with white fill, one central and one near the bottom"
+      },
+      {
+        "label": "ACH",
+        "count": 2,
+        "description": "small green-outlined circles in the right half"
+      },
+      {
+        "label": "SA grass",
+        "count": 1,
+        "description": "small green-outlined circle near the right side"
+      },
+      {
+        "label": "ECH PA",
+        "count": 2,
+        "description": "small green-outlined circles in the right half, below the ACH/SA grass circles"
+      },
+      {
+        "label": "sea holly",
+        "count": 1,
+        "description": "medium blue-outlined circle near the lower right"
+      }
+    ],
+    "notes": "No non-plant structures are visible. Count includes the partially visible left-edge echinops circle because its center appears just inside the cell, and excludes the top yellow circle showing only 'gig' because its center appears above the top cell boundary."
+  },
+  "B7": {
+    "cellId": "B7",
+    "totalCircles": 1,
+    "structures": [
+      "vertical tan/yellow strip with adjacent green/brown border lines along the left side (possible path or property/bed boundary)"
+    ],
+    "plantings": [
+      {
+        "label": "baltic parsley",
+        "count": 1,
+        "description": "medium-sized green-outlined circle near the center of the cell with the label written inside"
+      }
+    ],
+    "notes": "Only the 'baltic parsley' circle is clearly centered within the cell. Partial circles visible along the left edge, bottom edge, and lower-right corner appear to have centers outside the cell and were not counted."
+  },
+  "B8": {
+    "cellId": "B8",
+    "totalCircles": 1,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "PHLX. PAND",
+        "count": 1,
+        "description": "One large lavender/purple-outlined circle, partially cropped at the lower-left of the image, with black text inside."
+      }
+    ],
+    "notes": "The only circle whose center appears to fall within the cell is the large purple-outlined planting marker at the lower-left, close to the cell boundary. The text fragments along the top edge appear to be neighboring labels/context rather than circles in this cell."
+  },
+  "B9": {
+    "cellId": "B9",
+    "totalCircles": 0,
+    "structures": [
+      "thick gold/brown right-angle border line outlining part of a rectangular area"
+    ],
+    "plantings": [],
+    "notes": "No circular planting markers are visible with centers inside this cell. Partial text reading 'stipa barbata' appears near the upper-left edge, but it is not attached to any circle within the cell."
+  },
+  "B10": {
+    "cellId": "B10",
+    "totalCircles": 0,
+    "structures": [
+      "red vertical boundary/outline lines along the right side",
+      "red rectangular outline in the lower middle-right area",
+      "gold/yellow horizontal line near the top with a short vertical segment upward near the right side"
+    ],
+    "plantings": [],
+    "notes": "No circular planting markers are visible within this cell. No plant labels are present. The cell appears to contain only rectilinear linework/boundary or bed/structure outlines."
+  },
+  "C1": {
+    "cellId": "C1",
+    "totalCircles": 0,
+    "structures": [
+      "partial red-outlined planter/bed",
+      "boundary/property lines crossing the cell"
+    ],
+    "plantings": [],
+    "notes": "No planting-marker circles are visible with centers inside this cell. The crop shows partial red rectangular bed outlines and several vertical/horizontal/diagonal boundary lines; the visible text (including 'lettuce') appears to be part of adjacent bed labeling rather than a circle label."
+  },
+  "C2": {
+    "cellId": "C2",
+    "totalCircles": 0,
+    "structures": [
+      "red-outlined planter beds"
+    ],
+    "plantings": [],
+    "notes": "No planting-marker circles are visible within this cell. The visible content is mainly parts of two red rectangular planter/bed outlines with upside-down text labels inside them (left appears to include 'lettuce'; right appears to include 'tom...'). There is also partial red linear structure near the top edge, but no distinct plant circles."
+  },
+  "C3": {
+    "cellId": "C3",
+    "totalCircles": 3,
+    "structures": [
+      "planters"
+    ],
+    "plantings": [
+      {
+        "label": "*stipa barbata",
+        "count": 1,
+        "description": "large white circle with a tan/olive outline near the center of the cell"
+      },
+      {
+        "label": "veronica LAV",
+        "count": 1,
+        "description": "large white circle with a lavender/purple outline near the right side, partially cropped by the image edge"
+      },
+      {
+        "label": "ECH PA",
+        "count": 1,
+        "description": "small pale green circle with a green outline near the upper-right, partially cropped"
+      }
+    ],
+    "notes": "Red-outlined planter areas are visible. Partial circles at the bottom edge (including a red-outlined one and a yellow one) appear to have centers outside the cell and were not counted. The two right-side circles are close to the approximate cell boundary but appear to have centers inside."
+  },
+  "C4": {
+    "cellId": "C4",
+    "totalCircles": 6,
+    "structures": [
+      "red outlined planter/bed lines crossing the left and central part of the cell"
+    ],
+    "plantings": [
+      {
+        "label": "ECH PA",
+        "count": 4,
+        "description": "small white circles with light green outlines; two clustered near the upper left, one near the upper middle, and one near the right side"
+      },
+      {
+        "label": "veronica LAV",
+        "count": 1,
+        "description": "large white circle with a lavender/purple outline near the left side; partially cropped by the image edge but center appears inside the cell"
+      },
+      {
+        "label": "KF",
+        "count": 1,
+        "description": "large white circle with a light green outline near the lower center"
+      }
+    ],
+    "notes": "Excluded the large yellow circle at the right and the partial yellow circle at the bottom because their centers appear outside the cell boundary. The leftmost ECH PA and the veronica LAV circle are close to the left boundary, but their centers appear to fall inside C4."
+  },
+  "C5": {
+    "cellId": "C5",
+    "totalCircles": 19,
+    "structures": [
+      "vertical green border/line running near the left-center of the cell"
+    ],
+    "plantings": [
+      {
+        "label": "ECH PA",
+        "count": 5,
+        "description": "small white circles with green outlines, clustered from upper-left through lower-middle; several overlap"
+      },
+      {
+        "label": "SA grass",
+        "count": 4,
+        "description": "small light circles with pale green/blue-green outlines; one near the top and three on the right/lower-right, some rendered as 'SA gras'"
+      },
+      {
+        "label": "ECH. PV",
+        "count": 1,
+        "description": "large green-outlined white circle near the top center"
+      },
+      {
+        "label": "menzies burnet",
+        "count": 1,
+        "description": "large white circle with pink/lavender outline in the upper-left/center"
+      },
+      {
+        "label": "ACH",
+        "count": 2,
+        "description": "olive/gray-green outlined white circles, one medium and one small, near the left-center"
+      },
+      {
+        "label": "sang burn",
+        "count": 1,
+        "description": "large white circle with dark purple outline in the upper-right/center"
+      },
+      {
+        "label": "knautla macedon",
+        "count": 1,
+        "description": "medium white circle with mauve outline near the center-right"
+      },
+      {
+        "label": "rudbeck sub",
+        "count": 2,
+        "description": "two large white circles with yellow outlines on the upper-right side"
+      },
+      {
+        "label": "salvia NC",
+        "count": 1,
+        "description": "large white circle with blue-violet outline at right-center/lower-right"
+      },
+      {
+        "label": "g. yellow hyssop",
+        "count": 1,
+        "description": "large white circle with yellow outline at the lower-left"
+      }
+    ],
+    "notes": "Counted circles whose centers appear within the ~40 px inset cell boundary. Partial neighboring circles at the far right ('meadow rue'), the top-edge 'PA', the far-left partial ECH PA, and the large bottom 'PHLX. PAN.' circle appear to have centers outside C5 and were not counted."
+  },
+  "C6": {
+    "cellId": "C6",
+    "totalCircles": 14,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "ceph gig",
+        "count": 1,
+        "description": "large white-filled circle with yellow outline near the upper middle"
+      },
+      {
+        "label": "STP.G",
+        "count": 1,
+        "description": "large white-filled circle with olive-green outline near the left-middle"
+      },
+      {
+        "label": "VERB. OLYM",
+        "count": 1,
+        "description": "large white-filled circle with yellow outline in the center"
+      },
+      {
+        "label": "veronica Red Arrow",
+        "count": 2,
+        "description": "medium white-filled circles with lavender/purple outlines on the right half"
+      },
+      {
+        "label": "sea holly",
+        "count": 1,
+        "description": "medium white-filled circle with light blue outline near the upper-right edge"
+      },
+      {
+        "label": "monarda b",
+        "count": 3,
+        "description": "medium white-filled circles with pink/magenta outlines along the right side"
+      },
+      {
+        "label": "little blue-stem",
+        "count": 2,
+        "description": "small white-filled circles with pale green/teal outlines on the left-center to lower-left"
+      },
+      {
+        "label": "meadow rue",
+        "count": 2,
+        "description": "small-to-medium white-filled circles with violet outlines near the left side"
+      },
+      {
+        "label": "VV",
+        "count": 1,
+        "description": "large white-filled circle with olive-green outline near the lower center"
+      }
+    ],
+    "notes": "No non-plant structures are clearly inside this cell. Count includes edge-near circles whose centers appear to fall within the inset cell bounds."
+  },
+  "C7": {
+    "cellId": "C7",
+    "totalCircles": 1,
+    "structures": [
+      "vertical green/yellow boundary or property line near the left side",
+      "diagonal yellow boundary/edge line crossing the cell",
+      "faint horizontal green boundary/edge line across the cell"
+    ],
+    "plantings": [
+      {
+        "label": "Rs",
+        "count": 1,
+        "description": "large white-filled circle with a lavender/purple outline, centered in the upper-left/central area of the cell"
+      }
+    ],
+    "notes": "Only the lavender-outlined 'Rs' circle has its center within C7. Partial circles/labels at the left edge ('sea holly', 'monarda b'), the large magenta circle at the upper right, and the partial magenta circle at the bottom appear to have centers outside the cell and were not counted."
+  },
+  "C8": {
+    "cellId": "C8",
+    "totalCircles": 0,
+    "structures": [
+      "thin yellow/orange boundary line crossing the lower part of the cell and angling downward at the right",
+      "thin pale green boundary line crossing the lower part of the cell with a downward segment near the bottom center-right"
+    ],
+    "plantings": [],
+    "notes": "No circle centers appear to fall within C8. A large partial purple-outlined circle labeled \"PHLX. PAND\" is visible at the top-left, but its center appears outside this cell and is not counted."
+  },
+  "C9": {
+    "cellId": "C9",
+    "totalCircles": 0,
+    "structures": [
+      "vertical brown line through the cell (likely a property/boundary line)",
+      "diagonal pale yellow line crossing the lower-left area (likely a property/boundary line)"
+    ],
+    "plantings": [],
+    "notes": "No planting circles are visible within the cell boundaries. The crop appears mostly blank aside from two line features."
+  },
+  "C10": {
+    "cellId": "C10",
+    "totalCircles": 0,
+    "structures": [
+      "rectangular outlined structure",
+      "parallel vertical boundary lines near the right edge"
+    ],
+    "plantings": [],
+    "notes": "No planting circles are visible within this cell. The view shows only red-outlined structural/boundary features, including part of a large rectangle and vertical parallel lines at the right."
+  },
+  "D1": {
+    "cellId": "D1",
+    "totalCircles": 1,
+    "structures": [
+      "outlined rectangular non-plant feature along the left side",
+      "vertical red and teal boundary/edge lines",
+      "double red horizontal line across the upper-middle/right area",
+      "light green diagonal boundary/property line near the top"
+    ],
+    "plantings": [
+      {
+        "label": "li-atris spic",
+        "count": 1,
+        "description": "one medium-large brown-outlined circle with white interior and black text inside, located in the lower middle-right of the cell"
+      }
+    ],
+    "notes": "Only one circle center appears within the cell boundaries. Partial purple circles and labels are visible at the far right edge, but their centers appear outside D1 and were not counted."
+  },
+  "D2": {
+    "cellId": "D2",
+    "totalCircles": 13,
+    "structures": [
+      "double red horizontal line across the upper part of the cell",
+      "green diagonal line entering from the upper left"
+    ],
+    "plantings": [
+      {
+        "label": "ECHPU",
+        "count": 5,
+        "description": "small white circles with purple/violet outlines; clustered at upper left, left-middle, and across the top center/right; one top-row circle is mostly unlabeled/obscured but appears to belong to the same ECHPU group"
+      },
+      {
+        "label": "lavender",
+        "count": 1,
+        "description": "large white circle with green outline near upper left/center"
+      },
+      {
+        "label": "sprinter BX",
+        "count": 1,
+        "description": "large white circle with blue outline in the center"
+      },
+      {
+        "label": "Verbas-NIgrum",
+        "count": 2,
+        "description": "large white circles with green outlines on the right half"
+      },
+      {
+        "label": "ACH",
+        "count": 1,
+        "description": "medium white circle with green outline near the upper right"
+      },
+      {
+        "label": "liatris spic",
+        "count": 2,
+        "description": "medium white circles with purple outlines, one center-right and one lower-center"
+      },
+      {
+        "label": "*rattle-snake",
+        "count": 1,
+        "description": "large white circle with green outline in the lower-left/center area"
+      }
+    ],
+    "notes": "Counted circles whose centers appear within the inset cell bounds. A yellow 'foxtail' circle at the bottom and partial circles at the far right/bottom-left were excluded because their centers appear outside the cell. There is also a dark partial arc at left-middle that looks like a neighboring circle, but its center appears outside or too ambiguous to count."
+  },
+  "D3": {
+    "cellId": "D3",
+    "totalCircles": 12,
+    "structures": [
+      "double horizontal red parallel line crossing the upper-middle of the cell (possible path or property/boundary line)"
+    ],
+    "plantings": [
+      {
+        "label": "wood sp",
+        "count": 2,
+        "description": "two medium red-outlined circles near the top; label is partially cropped above them"
+      },
+      {
+        "label": "ACH",
+        "count": 1,
+        "description": "medium green-outlined circle at upper-left below the red line"
+      },
+      {
+        "label": "thyme",
+        "count": 1,
+        "description": "large green-outlined circle just below the red line"
+      },
+      {
+        "label": "russian sage",
+        "count": 1,
+        "description": "large pale lavender/purple-outlined circle in the left-center"
+      },
+      {
+        "label": "ERYN BOU",
+        "count": 2,
+        "description": "two medium pale green-gray outlined circles in the central area"
+      },
+      {
+        "label": "Verbas-NIgrum",
+        "count": 2,
+        "description": "two medium pale green outlined circles, one center-left and one upper-right of center"
+      },
+      {
+        "label": "fennel",
+        "count": 1,
+        "description": "one large pale green outlined circle in the lower-center"
+      },
+      {
+        "label": "poppy",
+        "count": 1,
+        "description": "small red-outlined circle near the upper-right below the red line"
+      },
+      {
+        "label": "BAP.AUS",
+        "count": 1,
+        "description": "large pale lavender-outlined circle on the right side, partially cut off by the image edge"
+      }
+    ],
+    "notes": "Counted only circles whose centers appear inside the approximate 40 px inset boundary. Partial circles at the far left, bottom, and the large yellow circle at the far right were excluded because their centers appear outside the cell."
+  },
+  "D4": {
+    "cellId": "D4",
+    "totalCircles": 16,
+    "structures": [
+      "double red horizontal line crossing the cell (likely a boundary/property line)"
+    ],
+    "plantings": [
+      {
+        "label": "YRW",
+        "count": 1,
+        "description": "medium yellow-outlined circle near the upper-left of the cell"
+      },
+      {
+        "label": "monarda b",
+        "count": 3,
+        "description": "three overlapping medium mauve/pink-outlined circles in the left-center"
+      },
+      {
+        "label": "SA grass",
+        "count": 4,
+        "description": "four overlapping light-green outlined circles clustered in the center around the label"
+      },
+      {
+        "label": "unlabeled",
+        "count": 2,
+        "description": "two small white/pale-filled, light-green outlined circles just below the red line in the upper-right area; any label is obscured"
+      },
+      {
+        "label": "ACH",
+        "count": 1,
+        "description": "one medium green-outlined circle near the lower-left"
+      },
+      {
+        "label": "poppy",
+        "count": 2,
+        "description": "two small red-outlined circles in the center-right/lower-right"
+      },
+      {
+        "label": "salvia NC",
+        "count": 1,
+        "description": "one medium purple-outlined circle right of center"
+      },
+      {
+        "label": "salvia NEM...",
+        "count": 1,
+        "description": "one medium purple-outlined circle near the right boundary"
+      },
+      {
+        "label": "salvia C",
+        "count": 1,
+        "description": "one medium purple-outlined circle in the lower-right"
+      }
+    ],
+    "notes": "Upper-right content is partly obscured by a black rectangle. The salvia NEM circle appears to have its center just inside the right boundary and was counted. Large pale-green circles and a red poppy near the bottom appear to have centers below the cell boundary and were not counted."
+  },
+  "D5": {
+    "cellId": "D5",
+    "totalCircles": 12,
+    "structures": [
+      "Partial black rectangular feature with two red horizontal lines and an adjacent green vertical border along the left edge"
+    ],
+    "plantings": [
+      {
+        "label": "PHLX. PAN. Jeana",
+        "count": 1,
+        "description": "large lavender/pink-outlined white circle near the top center"
+      },
+      {
+        "label": "meadowrue",
+        "count": 1,
+        "description": "small blue/violet-outlined white circle near the upper center-right"
+      },
+      {
+        "label": "little blue-stem",
+        "count": 3,
+        "description": "three small green-outlined white circles: one upper right, one near center, and one lower right"
+      },
+      {
+        "label": "VERB. OLYM",
+        "count": 1,
+        "description": "large yellow-outlined white circle near the center-right"
+      },
+      {
+        "label": "STPO",
+        "count": 1,
+        "description": "large green-outlined white circle partially cut off at the right edge"
+      },
+      {
+        "label": "salvia NC",
+        "count": 1,
+        "description": "small blue/violet-outlined white circle left of VERB. OLYM"
+      },
+      {
+        "label": "aster SYM LAE",
+        "count": 2,
+        "description": "two medium-to-large lavender/pink-outlined white circles on the left half"
+      },
+      {
+        "label": "salvia NEM.C",
+        "count": 1,
+        "description": "medium blue/violet-outlined white circle at the left edge; center appears just inside the cell"
+      },
+      {
+        "label": "JPY",
+        "count": 1,
+        "description": "large pale pink-outlined white circle partially visible in the lower-right"
+      }
+    ],
+    "notes": "Borderline edge judgments: the left-edge salvia NEM.C and right-edge STPO circles appear to have centers just inside the cell boundary. Partial circles/labels for hyssop, a top-right meadow rue, and the lower-center golden rod text were not counted because their centers appear outside the cell or no distinct circle center is visible."
+  },
+  "D6": {
+    "cellId": "D6",
+    "totalCircles": 17,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "meadow rue",
+        "count": 1,
+        "description": "medium white circle with purple/violet outline near the upper left"
+      },
+      {
+        "label": "unlabeled",
+        "count": 2,
+        "description": "small solid tan/beige filled circles with darker outline"
+      },
+      {
+        "label": "monarda b",
+        "count": 1,
+        "description": "medium white circle with pink/red outline near the upper right"
+      },
+      {
+        "label": "little blue-stem",
+        "count": 3,
+        "description": "medium white circles with pale green/aqua outline"
+      },
+      {
+        "label": "russian sage",
+        "count": 1,
+        "description": "large white circle with lavender/purple outline"
+      },
+      {
+        "label": "sprinter BX",
+        "count": 1,
+        "description": "large light gray/white circle with dark olive-green outline"
+      },
+      {
+        "label": "thyme",
+        "count": 2,
+        "description": "medium white circles with bright green outline"
+      },
+      {
+        "label": "STP G",
+        "count": 1,
+        "description": "very large white circle with green outline, mostly cropped at the left edge"
+      },
+      {
+        "label": "veronica Red Arrow",
+        "count": 1,
+        "description": "large white circle with lavender outline"
+      },
+      {
+        "label": "ceph gig",
+        "count": 1,
+        "description": "large white circle with yellow outline"
+      },
+      {
+        "label": "VERB. OLYM",
+        "count": 1,
+        "description": "large white circle with yellow outline"
+      },
+      {
+        "label": "UPYW",
+        "count": 1,
+        "description": "very large white circle with pale pink outline, mostly cropped at the lower left"
+      },
+      {
+        "label": "poppy",
+        "count": 1,
+        "description": "small white circle with red outline near the right edge"
+      }
+    ],
+    "notes": "Using the ~40 px inset rule, the top-edge circles labeled \"VV\", \"stem\", and the upper partial \"monarda b\" appear outside the cell, as do the lower partial tan circle and lower-right partial poppy. The large partial circles labeled \"STP G\" and \"UPYW\" appear to have centers inside the cell and were included."
+  },
+  "D7": {
+    "cellId": "D7",
+    "totalCircles": 1,
+    "structures": [
+      "vertical tan/brown boundary or edging strip with a thin green line along the left side"
+    ],
+    "plantings": [
+      {
+        "label": "phlox",
+        "count": 1,
+        "description": "one large lavender/pink outlined circle with the label centered inside"
+      }
+    ],
+    "notes": "Several partial plant circles are visible along the far left margin, but their centers appear outside D7 and were not counted."
+  },
+  "D8": {
+    "cellId": "D8",
+    "totalCircles": 0,
+    "structures": [
+      "possible property line: thin pale green slightly slanted vertical line crossing the right half of the cell"
+    ],
+    "plantings": [],
+    "notes": "No planting-marker centers fall within D8. A partial large purple circle is visible at the far left edge, but its center is outside the cell and is not counted. A short yellow diagonal line appears near the upper-right contextual margin, likely outside the actual cell area."
+  },
+  "D9": {
+    "cellId": "D9",
+    "totalCircles": 0,
+    "structures": [
+      "thick brown vertical boundary line",
+      "thin pale yellow diagonal and horizontal line",
+      "red outlined rectangular structure/bed edges on the right and lower portions"
+    ],
+    "plantings": [],
+    "notes": "No planting circles or associated plant labels are visible within this cell. The cell is dominated by non-plant linework and rectangular outlines."
+  },
+  "D10": {
+    "cellId": "D10",
+    "totalCircles": 0,
+    "structures": [
+      "partial basement structure/stairs area outlined in red"
+    ],
+    "plantings": [],
+    "notes": "No planting circles are visible whose centers fall within this cell. The view is dominated by red structural outline lines and partial text reading 'BASEMENT S'."
+  },
+  "E1": {
+    "cellId": "E1",
+    "totalCircles": 1,
+    "structures": [
+      "large teal rectangular structure with rounded corners near the top of the cell",
+      "thick gray curved line/path edge crossing the middle-lower part of the cell",
+      "red outlined rectangular/boundary lines along the left and right sides"
+    ],
+    "plantings": [
+      {
+        "label": "sprinter BX",
+        "count": 1,
+        "description": "one large white-filled circle with a blue outline, centered in the lower-middle of the cell"
+      }
+    ],
+    "notes": "Only the blue 'sprinter BX' circle has its center clearly within E1. Partial circles visible at the top, right edge, and bottom appear to have centers outside the cell and were not counted. The text 'lavender thyme oregano' appears as area text, not a counted circle label."
+  },
+  "E2": {
+    "cellId": "E2",
+    "totalCircles": 13,
+    "structures": [
+      "large gray hardscape/path area occupying much of the left and lower-left of the cell",
+      "dark diagonal edge/border running from upper middle toward lower right"
+    ],
+    "plantings": [
+      {
+        "label": "ECHPU",
+        "count": 2,
+        "description": "two medium purple-outlined circles on the left side"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "one medium olive/gray-outlined circle in the top-center overlap cluster with no readable text"
+      },
+      {
+        "label": "ACI",
+        "count": 1,
+        "description": "one medium olive-green outlined circle near the upper center"
+      },
+      {
+        "label": "liatris spic",
+        "count": 1,
+        "description": "one medium purple-outlined circle near the upper center-right"
+      },
+      {
+        "label": "foxtail lily",
+        "count": 1,
+        "description": "one large yellow-outlined circle near the upper right"
+      },
+      {
+        "label": "Verbas-Nigrum",
+        "count": 2,
+        "description": "two large olive-green outlined circles along the upper/right side"
+      },
+      {
+        "label": "achillea",
+        "count": 1,
+        "description": "one medium olive-green outlined circle below foxtail lily"
+      },
+      {
+        "label": "SA gras",
+        "count": 2,
+        "description": "two medium olive-green outlined circles stacked along the right side"
+      },
+      {
+        "label": "echinops",
+        "count": 1,
+        "description": "one very large pale/white-filled circle with blue outline in the lower-right center"
+      },
+      {
+        "label": "rattle-master",
+        "count": 1,
+        "description": "one large light-green outlined circle near the lower right"
+      }
+    ],
+    "notes": "Did not count the partially shown top-left rattle-snake circle, the right-edge liatris/poppy circles, or the lower-right partial circle because their centers appear outside the cell boundary. The top-center olive/gray circle is counted but has no readable label."
+  },
+  "E3": {
+    "cellId": "E3",
+    "totalCircles": 16,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "fennel",
+        "count": 2,
+        "description": "large light-green outlined circles with white fill"
+      },
+      {
+        "label": "foxtail lily",
+        "count": 1,
+        "description": "medium yellow-outlined circle"
+      },
+      {
+        "label": "liatris ligul",
+        "count": 2,
+        "description": "medium purple-outlined circles"
+      },
+      {
+        "label": "Verbas-NIgrum",
+        "count": 4,
+        "description": "small to medium green-outlined circles"
+      },
+      {
+        "label": "paniculum cloud nine",
+        "count": 2,
+        "description": "large circles; one dark green-outlined and one lavender/purple-outlined"
+      },
+      {
+        "label": "veronica Red Arrow",
+        "count": 1,
+        "description": "large lavender/purple-outlined circle"
+      },
+      {
+        "label": "poppy",
+        "count": 1,
+        "description": "small red-outlined circle"
+      },
+      {
+        "label": "verbasc. olympic",
+        "count": 1,
+        "description": "large yellow-green outlined circle"
+      },
+      {
+        "label": "ACH",
+        "count": 1,
+        "description": "small light-green outlined circle"
+      },
+      {
+        "label": "russian sage",
+        "count": 1,
+        "description": "large pale lavender-outlined circle"
+      }
+    ],
+    "notes": "No non-plant structures are visible. Several neighboring circles are partially visible near the crop edges, but only circles with centers inside the inset cell area were counted."
+  },
+  "E4": {
+    "cellId": "E4",
+    "totalCircles": 5,
+    "structures": [
+      "thick black line/edge crossing the lower part of the cell"
+    ],
+    "plantings": [
+      {
+        "label": "poppy",
+        "count": 1,
+        "description": "small white-filled circle with a red outline near the upper-left interior"
+      },
+      {
+        "label": "SA sungras",
+        "count": 1,
+        "description": "small white-filled circle with a light green outline near the left-middle"
+      },
+      {
+        "label": "PVG*",
+        "count": 1,
+        "description": "medium white-filled circle with a light green outline near the upper center"
+      },
+      {
+        "label": "WH",
+        "count": 1,
+        "description": "large white-filled circle with a thick yellow/orange outline in the lower-left/center"
+      },
+      {
+        "label": "Viburnum x bodnantense 'Dawn'",
+        "count": 1,
+        "description": "very large white-filled circle with a gray-purple outline occupying the right-center"
+      }
+    ],
+    "notes": "Counted only circles whose centers are clearly within the approximate inset cell boundary. A partially cropped purple circle labeled 'Malva' near the top edge appears to have its center on or just above the boundary, so it was not counted. Other partial circles at the edges are neighboring-context plants only."
+  },
+  "E5": {
+    "cellId": "E5",
+    "totalCircles": 12,
+    "structures": [
+      "diagonal dark border/path edge crossing the lower-left corner"
+    ],
+    "plantings": [
+      {
+        "label": "aster SYM LAE",
+        "count": 1,
+        "description": "large lavender/purple-outlined circle in the upper-left area"
+      },
+      {
+        "label": "golden rod",
+        "count": 3,
+        "description": "large, faint/lightly outlined overlapping circles across the upper-middle to middle-right area"
+      },
+      {
+        "label": "little blue-stem",
+        "count": 2,
+        "description": "medium green-outlined circles with light fill in the mid-left/mid area"
+      },
+      {
+        "label": "ACH",
+        "count": 1,
+        "description": "small green-outlined circle near the lower-left/middle cluster"
+      },
+      {
+        "label": "EchPV",
+        "count": 3,
+        "description": "cluster of overlapping white/light circles with green outlines in the lower-left portion"
+      },
+      {
+        "label": "russian sage",
+        "count": 1,
+        "description": "medium-large pale circle with lavender/purple outline near the lower middle-right"
+      },
+      {
+        "label": "STP.G",
+        "count": 1,
+        "description": "large green-outlined circle on the right side"
+      }
+    ],
+    "notes": "Counted only circles whose centers appear inside the ~40 px inset cell. The clipped top-left aster, highest top-edge golden rod, top-right JPY, bottom ACH, and bottom-right JPYW appear centered outside E5 and were not counted. EchPV appears to label a 3-circle cluster."
+  },
+  "E6": {
+    "cellId": "E6",
+    "totalCircles": 12,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "JPYW",
+        "count": 2,
+        "description": "large pale gray-filled circles with light pink outlines; one fully visible left-center and one partially cropped at the top-left"
+      },
+      {
+        "label": "sang blk",
+        "count": 2,
+        "description": "medium white-filled circles with purple outlines; the upper one includes a small asterisk"
+      },
+      {
+        "label": "VERB. OLYM.",
+        "count": 1,
+        "description": "large white-filled circle with a yellow outline near the upper-right/center"
+      },
+      {
+        "label": "poppy",
+        "count": 1,
+        "description": "small white-filled circle with a red/orange outline near the top-right"
+      },
+      {
+        "label": "PHL. TUBA",
+        "count": 1,
+        "description": "large white-filled circle with a purple outline, partly cropped on the right edge"
+      },
+      {
+        "label": "salvia NC",
+        "count": 1,
+        "description": "medium white-filled circle with a green outline on the right side"
+      },
+      {
+        "label": "sprob hetero",
+        "count": 1,
+        "description": "medium white-filled circle with a green outline, partly cropped at the bottom"
+      },
+      {
+        "label": "unlabeled",
+        "count": 3,
+        "description": "small tan/brown filled circles overlapping nearby labeled circles"
+      }
+    ],
+    "notes": "No non-plant structures are visible. Count uses the approximate 40 px inset boundary; the right-edge PHL. TUBA and bottom-edge sprob hetero circles appear to have centers inside this cell, while the cropped yellow OLYM circle at the very top appears outside and was not counted."
+  },
+  "E7": {
+    "cellId": "E7",
+    "totalCircles": 11,
+    "structures": [
+      "brown/gold border line or bed/property edge across the top, with a vertical segment near the left"
+    ],
+    "plantings": [
+      {
+        "label": "PHL. TUBA",
+        "count": 1,
+        "description": "large pale lavender circle with magenta outline at the left side; center appears just inside the cell"
+      },
+      {
+        "label": "JSBF",
+        "count": 2,
+        "description": "large pale lavender circles with magenta outlines in the central area"
+      },
+      {
+        "label": "poppy",
+        "count": 1,
+        "description": "small white circle with red/orange outline near the upper right-center"
+      },
+      {
+        "label": "EchGJ",
+        "count": 2,
+        "description": "large pale green/gray circles with dark green outlines on the right; one label is partially obscured but appears to be the same type"
+      },
+      {
+        "label": "sprob hetero",
+        "count": 1,
+        "description": "medium white circle with green outline near the lower left"
+      },
+      {
+        "label": "unlabeled",
+        "count": 3,
+        "description": "medium solid purple/violet filled circles, overlapping nearby labeled plants"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "small tan/brown filled circle with darker outline near the center-lower area"
+      }
+    ],
+    "notes": "Excluded edge circles whose centers appear outside the approximate 40 px inset boundary, including the left-edge poppies, the far-right green circle, and the large lavender circles along the bottom."
+  },
+  "E8": {
+    "cellId": "E8",
+    "totalCircles": 10,
+    "structures": [
+      "brown/gold border or property line running horizontally across the upper part of the view and vertically down the right side",
+      "faint pale-green line near the top-right corner"
+    ],
+    "plantings": [
+      {
+        "label": "verbas-cum nlgrum alba",
+        "count": 2,
+        "description": "two large labeled circles; one green-outlined white circle near upper-left/center and one lavender/purple-outlined circle near center-right"
+      },
+      {
+        "label": "poppy",
+        "count": 2,
+        "description": "two small white circles with red outlines"
+      },
+      {
+        "label": "aruncus horatio",
+        "count": 2,
+        "description": "two medium-large green-outlined white circles"
+      },
+      {
+        "label": "EchGo",
+        "count": 1,
+        "description": "one large green-outlined white circle, partially cropped along the left edge"
+      },
+      {
+        "label": "unlabeled",
+        "count": 3,
+        "description": "three solid purple/violet filled circles of varying size, overlapping nearby labeled circles"
+      }
+    ],
+    "notes": "Counted by estimated circle centers within the cell. The left-edge EchGo circle and the lower purple filled circle are borderline but appear inside. Excluded the top-left partial 'EchGJ' circle and the bottom partial 'PHLX. DAVID' and lower aruncus circles because their centers appear outside the cell."
+  },
+  "E9": {
+    "cellId": "E9",
+    "totalCircles": 0,
+    "structures": [
+      "barbecue"
+    ],
+    "plantings": [],
+    "notes": "No planting circles are visible with centers inside this cell. The view is dominated by the vertical 'BARBECU...' label and adjacent red/brown linework for the barbecue area; a faint diagonal green line also crosses the cell."
+  },
+  "E10": {
+    "cellId": "E10",
+    "totalCircles": 0,
+    "structures": [
+      "stairs",
+      "large red rectangular structure/area"
+    ],
+    "plantings": [],
+    "notes": "No planting-marker circles are visible whose centers fall within this cell. The view is dominated by red structural drawing, including what appears to be basement stairs in the upper-left portion and a large solid red rectangular built area in the lower-middle portion. Partial 'BASEMENT S' text is visible near the top and is not a plant label."
+  },
+  "F1": {
+    "cellId": "F1",
+    "totalCircles": 13,
+    "structures": [
+      "red boundary/property lines along the left/top area",
+      "pale green diagonal line crossing the cell"
+    ],
+    "plantings": [
+      {
+        "label": "unlabeled",
+        "count": 7,
+        "description": "small overlapping white-filled circles with light green outlines clustered beneath/around the upper labeled plants"
+      },
+      {
+        "label": "verbena b",
+        "count": 1,
+        "description": "large pale circle with purple outline near the top center"
+      },
+      {
+        "label": "nepeta",
+        "count": 1,
+        "description": "large pale circle with purple outline at upper right"
+      },
+      {
+        "label": "echinops",
+        "count": 1,
+        "description": "large pale circle with blue outline at left-center/lower-left"
+      },
+      {
+        "label": "salvia nem",
+        "count": 3,
+        "description": "medium pale circles with purple outlines clustered in the lower-middle/right; text partly overlapped but appears to read salvia nem"
+      }
+    ],
+    "notes": "Counted using the approximate inset cell boundary. Excluded the partial blue echinops at the bottom and the partial yellow/purple circles at the right because their centers appear outside the cell. Some small green-outlined circles overlap heavily, so their exact edges are slightly obscured."
+  },
+  "F2": {
+    "cellId": "F2",
+    "totalCircles": 5,
+    "structures": [
+      "curved gray path/border line crossing the cell"
+    ],
+    "plantings": [
+      {
+        "label": "nepeta",
+        "count": 2,
+        "description": "large pale/white-filled circles with light lavender outlines"
+      },
+      {
+        "label": "rudbekia sub",
+        "count": 1,
+        "description": "large pale/white-filled circle with yellow outline"
+      },
+      {
+        "label": "SB",
+        "count": 1,
+        "description": "large pale/white-filled circle with dark maroon outline and bold black text inside"
+      },
+      {
+        "label": "poppy",
+        "count": 1,
+        "description": "small pale/white-filled circle with red-orange outline"
+      }
+    ],
+    "notes": "Counted only circles whose centers are clearly within the approximate inset cell boundary. Partial/borderline circles at the far left, bottom edge, and right edge were excluded, including the green 'PhR' circle on the right, which appears on or just beyond the boundary. Plain text such as 'allium pink jewel wild quinine' was not counted because no circle is visible with that label."
+  },
+  "F3": {
+    "cellId": "F3",
+    "totalCircles": 15,
+    "structures": [
+      "gray shaded area with a dark curved/diagonal border along the left and lower-left portion of the cell"
+    ],
+    "plantings": [
+      {
+        "label": "ACH",
+        "count": 2,
+        "description": "small green-outlined white circles; one near the upper-left edge and one near the lower-right"
+      },
+      {
+        "label": "PhR",
+        "count": 4,
+        "description": "small to medium dark-green-outlined white circles clustered on the left side"
+      },
+      {
+        "label": "veronica Red Arrow",
+        "count": 1,
+        "description": "medium-large lavender/purple-outlined white circle near the upper center-left"
+      },
+      {
+        "label": "Verbas-Nigrum",
+        "count": 1,
+        "description": "medium green-outlined white circle near the upper center-right"
+      },
+      {
+        "label": "persicaria polymorpha",
+        "count": 1,
+        "description": "very large pale-green-outlined white circle on the right side"
+      },
+      {
+        "label": "VV",
+        "count": 2,
+        "description": "large green-outlined white circles in the center and lower center"
+      },
+      {
+        "label": "echinops",
+        "count": 1,
+        "description": "medium-large blue-outlined white circle overlapping the central group"
+      },
+      {
+        "label": "monarda brad",
+        "count": 3,
+        "description": "medium magenta/purple-outlined white circles in the left/lower-left cluster"
+      }
+    ],
+    "notes": "Count is based on the approximate inset cell boundary. The upper-left ACH and left-edge PhR appear to have centers just inside the cell and were counted. Partial circles at the very top, far left, and bottom edge were excluded because their centers appear outside the cell."
+  },
+  "F4": {
+    "cellId": "F4",
+    "totalCircles": 3,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "unlabeled",
+        "count": 2,
+        "description": "black outlined circles with the same apparent center: one medium full circle near the center-right and one much larger circle visible mainly as a thick black arc along the left and bottom of the cell"
+      },
+      {
+        "label": "aster.FM",
+        "count": 1,
+        "description": "purple/violet outlined circle at the lower-left, partially cropped by the bottom edge; center appears inside the cell"
+      }
+    ],
+    "notes": "No obvious non-plant structures are visible. The two black circles appear concentric and are unlabeled in this crop. The aster.FM circle is close to the lower boundary, but its center appears to fall within F4."
+  },
+  "F5": {
+    "cellId": "F5",
+    "totalCircles": 10,
+    "structures": [
+      "curved black-edged gray area along the left side",
+      "diagonal light-green line crossing the left side"
+    ],
+    "plantings": [
+      {
+        "label": "unlabeled",
+        "count": 2,
+        "description": "two small green-outlined circles, one near the upper-left interior and one near the mid-left area; no readable text visible in the crop"
+      },
+      {
+        "label": "ACh",
+        "count": 1,
+        "description": "small green-outlined circle near the upper center-left"
+      },
+      {
+        "label": "russian sage",
+        "count": 1,
+        "description": "medium-large lavender/purple-outlined circle near the upper middle"
+      },
+      {
+        "label": "JPYW",
+        "count": 1,
+        "description": "very large pale pink-outlined circle occupying much of the upper-right area"
+      },
+      {
+        "label": "san-gulsorba squrrel",
+        "count": 2,
+        "description": "two large magenta/lilac-outlined overlapping circles in the middle-to-lower right area; label spelling is slightly unclear but appears this way"
+      },
+      {
+        "label": "EchP",
+        "count": 2,
+        "description": "two small green-outlined circles near the lower left/center"
+      },
+      {
+        "label": "PVG",
+        "count": 1,
+        "description": "large light-green-outlined circle cropped by the bottom edge near the center"
+      }
+    ],
+    "notes": "Included partially cropped circles whose centers appear inside the cell, notably JPYW and PVG. Excluded the top purple 'sage' circle and partial circles at the bottom/right whose centers appear outside the cell. One small green circle near the top edge is close to the boundary but appears inside."
+  },
+  "F6": {
+    "cellId": "F6",
+    "totalCircles": 12,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "YW",
+        "count": 1,
+        "description": "very large white circle with a pale pink outline, partially cropped on the left"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "small solid purple/violet circle near the left-center"
+      },
+      {
+        "label": "Veron Fasc",
+        "count": 1,
+        "description": "medium white circle with a green outline"
+      },
+      {
+        "label": "PVG",
+        "count": 2,
+        "description": "two large white circles with green/pale-green outlines (one lower-left, one center-right)"
+      },
+      {
+        "label": "swamp milkweed",
+        "count": 1,
+        "description": "large white circle with a lavender/purple outline near the upper center-left"
+      },
+      {
+        "label": "unlabeled",
+        "count": 2,
+        "description": "two small tan/brown filled circles with outlines"
+      },
+      {
+        "label": "ceph gig",
+        "count": 1,
+        "description": "large white circle with a yellow outline near the top center"
+      },
+      {
+        "label": "sprob hetero",
+        "count": 1,
+        "description": "medium white circle with a bright green outline near the top edge"
+      },
+      {
+        "label": "salvia NC",
+        "count": 1,
+        "description": "medium white circle with a green outline near the upper-right"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "large solid dark green circle near the right-center"
+      }
+    ],
+    "notes": "No non-plant structures visible. Several circles overlap the crop edges; the left YW circle, top sprob hetero circle, and lower-left PVG circle appear to have centers inside the cell, while more heavily cut-off circles at the top, bottom, and far right appear centered outside and were not counted."
+  },
+  "F7": {
+    "cellId": "F7",
+    "totalCircles": 12,
+    "structures": [
+      "horizontal black strip/line crossing the middle of the cell"
+    ],
+    "plantings": [
+      {
+        "label": "salvia NC",
+        "count": 2,
+        "description": "medium green-outlined circles with light gray/white fill; one sits close to the left boundary"
+      },
+      {
+        "label": "sprob hetero",
+        "count": 1,
+        "description": "medium green-outlined circle with light gray/white fill"
+      },
+      {
+        "label": "PHLX. PAND",
+        "count": 1,
+        "description": "large pale gray circle with a purple outline near the top"
+      },
+      {
+        "label": "unlabeled",
+        "count": 2,
+        "description": "large dark green solid circles across the middle"
+      },
+      {
+        "label": "PVG",
+        "count": 2,
+        "description": "large pale green outlined circles along the lower part of the cell"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "small pale gray/lavender circle near the lower left, partially overlapped"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "small tan/brown filled circle near the lower left"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "small pale green outlined circle near the lower center-right"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "small bright green outlined circle near the lower right"
+      }
+    ],
+    "notes": "Approximate cell edges used. Included the left-edge salvia NC and the two lower PVG circles because their centers appear to fall within F7. Excluded partial circles whose centers appear outside the cell, including the top partial purple circle, the far-right PHLX. PAND circle, and the orange circles at bottom right."
+  },
+  "F8": {
+    "cellId": "F8",
+    "totalCircles": 8,
+    "structures": [
+      "gray diagonal path/hardscape area in the lower-right portion",
+      "yellow-brown border/property-line style line along the upper-right/right edge"
+    ],
+    "plantings": [
+      {
+        "label": "PHLX. PAND",
+        "count": 1,
+        "description": "very large pink/magenta outline circle on the left, text inside"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "small-to-medium blue/violet filled circle near the top center, overlapping other top-edge circles"
+      },
+      {
+        "label": "aruncus horatio",
+        "count": 1,
+        "description": "medium green outline circle near the upper middle-left, text inside"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "large solid sage/olive-green filled circle in the lower-left/center"
+      },
+      {
+        "label": "STP.G",
+        "count": 1,
+        "description": "large white-filled circle with dark green outline at right-center, text inside"
+      },
+      {
+        "label": "sprob hetero",
+        "count": 1,
+        "description": "medium white-filled circle with bright green outline below STP.G, text inside"
+      },
+      {
+        "label": "sprob hetero",
+        "count": 1,
+        "description": "medium white-filled circle with bright green outline lower center-right, text inside"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "small pale/light-green outline circle near the lower-left edge of the cell"
+      }
+    ],
+    "notes": "Counted only circles whose centers appear within the inset cell area. Excluded the top-edge circles labeled near 'nigrum alba' and the upper partial 'aruncus horatio' because their centers appear above the cell boundary; excluded the red 'LBC' circles at the bottom and partial circles at the far right because their centers appear outside the cell."
+  },
+  "F9": {
+    "cellId": "F9",
+    "totalCircles": 3,
+    "structures": [
+      "gray curved path/edge along the left side",
+      "tan/gold angled border or edging near the upper left",
+      "red-outlined rectangular/property-line feature at the upper-right/right side"
+    ],
+    "plantings": [
+      {
+        "label": "little spire",
+        "count": 1,
+        "description": "large purple/violet outlined circle with the label inside; overlapping nearby circles"
+      },
+      {
+        "label": "EchP",
+        "count": 1,
+        "description": "medium white-filled circle with a green outline near the lower center; overlaps adjacent circles"
+      },
+      {
+        "label": "agastache blue fortune",
+        "count": 1,
+        "description": "large purple/violet outlined circle near the center-right with text inside"
+      }
+    ],
+    "notes": "Three circle centers fall within the estimated F9 boundaries. Additional purple and green circles are partially visible near the bottom and lower left/right, but their centers appear outside the cell. A tiny dark gray dot near the left curve looks like part of the linework rather than a planting marker, so it was not counted."
+  },
+  "F10": {
+    "cellId": "F10",
+    "totalCircles": 0,
+    "structures": [
+      "partial red rectangular structure visible along the top edge",
+      "teal horizontal line crossing the upper part of the cell",
+      "thin red vertical line near the left side",
+      "faint green vertical line near the left side"
+    ],
+    "plantings": [],
+    "notes": "No circle planting markers are visible with centers inside this cell. The cell appears mostly empty aside from the visible non-plant linework/partial rectangular feature."
+  },
+  "G1": {
+    "cellId": "G1",
+    "totalCircles": 13,
+    "structures": [
+      "vertical red property line near the left side of the cell"
+    ],
+    "plantings": [
+      {
+        "label": "echinops",
+        "count": 1,
+        "description": "one large blue-outlined white circle in the upper-left area"
+      },
+      {
+        "label": "salvia nem",
+        "count": 2,
+        "description": "two purple/violet-outlined circles along the top edge"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "one mostly obscured pale lime/green-outlined circle behind the top-center/right cluster"
+      },
+      {
+        "label": "EchP",
+        "count": 5,
+        "description": "five small olive/green-outlined white circles; one shows only partial text ('hP') due to overlap"
+      },
+      {
+        "label": "verbena b",
+        "count": 1,
+        "description": "one large pale purple-outlined white circle in the upper-right/center area"
+      },
+      {
+        "label": "*stipa barbata",
+        "count": 3,
+        "description": "three large tan/olive-outlined white circles across the left-center and lower half"
+      }
+    ],
+    "notes": "Count includes one mostly hidden pale green circle whose center appears to fall within G1. Several circles near the top and right sides are close to the estimated cell boundary."
+  },
+  "G2": {
+    "cellId": "G2",
+    "totalCircles": 5,
+    "structures": [
+      "gray curving boundary/path line along the bottom and right side of the cell",
+      "light green diagonal line near the upper right (possible property/guide line)"
+    ],
+    "plantings": [
+      {
+        "label": "rudbekia sub",
+        "count": 1,
+        "description": "large white-filled circle with a yellow outline near the upper left"
+      },
+      {
+        "label": "*stipa barbata",
+        "count": 1,
+        "description": "large white-filled circle with an olive/tan outline near the left-center"
+      },
+      {
+        "label": "EchP",
+        "count": 2,
+        "description": "two small-to-medium green filled circles with dark green outlines near the lower left"
+      },
+      {
+        "label": "W/H",
+        "count": 1,
+        "description": "very large white-filled circle with an orange/yellow outline and a tiny red center dot near the middle-right"
+      }
+    ],
+    "notes": "Counted only circles whose centers appear within the approximate 40 px inset cell boundary. Partial circles and labels at the far left/top (such as 'ssalvi nem' and other cut-off labels) were not counted because their centers appear outside or right on the boundary. Small text 'nrpeta' overlaps the top of the W/H circle but is ambiguous and was not treated as a separate counted planting."
+  },
+  "G3": {
+    "cellId": "G3",
+    "totalCircles": 7,
+    "structures": [
+      "curved thick gray path/border line crossing the left and lower part of the cell",
+      "diagonal pale-green line crossing the cell"
+    ],
+    "plantings": [
+      {
+        "label": "ACH",
+        "count": 2,
+        "description": "two small olive/gray-green outlined circles near the upper-left/center"
+      },
+      {
+        "label": "aster.FM",
+        "count": 1,
+        "description": "large purple-outlined circle along the right side, partially cropped"
+      },
+      {
+        "label": "KF",
+        "count": 2,
+        "description": "two large pale-green outlined circles with white fill, overlapping on the right/lower-right"
+      },
+      {
+        "label": "poppy",
+        "count": 1,
+        "description": "small red-outlined circle near center-right"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "small yellow-outlined circle near the lower-right"
+      }
+    ],
+    "notes": "Using the approximate 40 px inset boundary, the top-edge purple circles labeled 'brad' and 'monarda brad' are excluded because their centers are above the cell. Lower/right-edge purple circles beyond the boundary are also excluded; the 'aster.FM' center appears to fall within this cell."
+  },
+  "G4": {
+    "cellId": "G4",
+    "totalCircles": 8,
+    "structures": [
+      "curved black border/line crossing the upper part of the cell"
+    ],
+    "plantings": [
+      {
+        "label": "aster.FM",
+        "count": 2,
+        "description": "medium-large white-filled circles with purple outlines in the upper-left and center-left"
+      },
+      {
+        "label": "persicaria polymorpha",
+        "count": 1,
+        "description": "one very large white-filled circle with a pale green outline in the upper-right/center"
+      },
+      {
+        "label": "verbena hastata",
+        "count": 3,
+        "description": "purple-outlined white-filled circles: one at mid-left and two overlapping along the lower half"
+      },
+      {
+        "label": "YRW",
+        "count": 1,
+        "description": "one small yellow-outlined white-filled circle near the lower-middle left of center"
+      },
+      {
+        "label": "milkweed",
+        "count": 1,
+        "description": "one medium white-filled circle with an orange outline near the right edge"
+      }
+    ],
+    "notes": "No obvious non-plant objects besides the curved black line. Excluded the partial left-edge aster, bottom salvia nem.c, lower YRW, and other edge circles because their centers appear outside the cell. The lower-right verbena and right-edge milkweed are close to the boundary but appear centered within G4."
+  },
+  "G5": {
+    "cellId": "G5",
+    "totalCircles": 15,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "EchP",
+        "count": 2,
+        "description": "small pale circles with dark green outlines near the upper-left/upper-middle"
+      },
+      {
+        "label": "PVG",
+        "count": 3,
+        "description": "large pale gray-white circles with light green outlines"
+      },
+      {
+        "label": "baltic parsley",
+        "count": 1,
+        "description": "medium pale circle with dark green outline"
+      },
+      {
+        "label": "Verbas-Nigrum",
+        "count": 1,
+        "description": "medium pale circle with dark green outline"
+      },
+      {
+        "label": "golden rod",
+        "count": 2,
+        "description": "large pale gray-white circles with light green outlines on the right side"
+      },
+      {
+        "label": "milkweed",
+        "count": 5,
+        "description": "medium-large overlapping circles with orange outlines"
+      },
+      {
+        "label": "sneeze weed",
+        "count": 1,
+        "description": "large pale circle with red-orange outline near the bottom-left"
+      }
+    ],
+    "notes": "Used the approximate cell boundary 40 px in from each image edge. Excluded partial top-edge EchP circles and right-edge circles whose centers appear outside the cell. The leftmost milkweed and the lower-left sneeze weed are close to the boundary but their centers appear inside. No clear non-plant structure is inside the cell; a thick black curved line is only visible in the top-left context area."
+  },
+  "G6": {
+    "cellId": "G6",
+    "totalCircles": 13,
+    "structures": [
+      "curved gray path/bed edge along the bottom of the cell"
+    ],
+    "plantings": [
+      {
+        "label": "PVG",
+        "count": 1,
+        "description": "large white-filled circle with light green outline at upper left"
+      },
+      {
+        "label": "swamp milkweed",
+        "count": 2,
+        "description": "large white-filled circles with lavender/purple outlines"
+      },
+      {
+        "label": "golden rod",
+        "count": 4,
+        "description": "medium tan/brown filled circles with darker brown outlines"
+      },
+      {
+        "label": "red twig dogwood",
+        "count": 1,
+        "description": "very large white-filled circle with gray-green outline near upper right"
+      },
+      {
+        "label": "knautia maced",
+        "count": 4,
+        "description": "medium white-filled circles with magenta outlines, overlapping along the lower half"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "medium white-filled circle with lime-green outline near the right side"
+      }
+    ],
+    "notes": "Counted circles whose centers appear inside the approximate 40 px inset cell boundary. Partial circles in the outer context area were not counted. The tan circles are associated with the nearby repeated 'golden rod' text."
+  },
+  "G7": {
+    "cellId": "G7",
+    "totalCircles": 23,
+    "structures": [
+      "gray hardscape/path area along the bottom with a curving gray border entering from the right",
+      "diagonal pale-green line crossing the lower portion"
+    ],
+    "plantings": [
+      {
+        "label": "PVG",
+        "count": 2,
+        "description": "two very large pale gray/white-filled circles near the top with soft gray-green outlines"
+      },
+      {
+        "label": "kniphofia uvalia",
+        "count": 1,
+        "description": "one large white circle with a bright lime-green outline at center-left"
+      },
+      {
+        "label": "SA grass",
+        "count": 15,
+        "description": "a mass of small-to-medium white circles with bright lime-green outlines spread across the center and right side"
+      },
+      {
+        "label": "LBC",
+        "count": 3,
+        "description": "three medium white circles with red outlines in the upper-right area"
+      },
+      {
+        "label": "unlabeled",
+        "count": 2,
+        "description": "two medium tan/brown filled circles on the left side"
+      }
+    ],
+    "notes": "Several partial circles are visible in the surrounding context at the far left, top, and right edges, but their centers appear outside G7 and were not counted. The word 'butterfly' appears as area text, not a planting marker."
+  },
+  "G8": {
+    "cellId": "G8",
+    "totalCircles": 11,
+    "structures": [
+      "broad gray path/walkway running diagonally through the center and right side",
+      "dark gray curved edge/border line at the lower left"
+    ],
+    "plantings": [
+      {
+        "label": "LBC",
+        "count": 4,
+        "description": "medium white circles with reddish-orange outlines clustered in the upper-left area"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "one additional medium red/orange-outlined white circle near the upper middle-left, partly obscured by the hosta circle"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "small purple/violet filled circle at left-center, overlapping the hosta area"
+      },
+      {
+        "label": "hosta halcyon",
+        "count": 1,
+        "description": "large white circle with a muted green outline and large stacked text"
+      },
+      {
+        "label": "EchP",
+        "count": 2,
+        "description": "medium green-outlined white circles on the right side"
+      },
+      {
+        "label": "sprob hetero",
+        "count": 1,
+        "description": "large bright-green-outlined white circle near the lower-right"
+      },
+      {
+        "label": "little spire",
+        "count": 1,
+        "description": "medium purple/violet filled circle near the right edge"
+      }
+    ],
+    "notes": "Several partial circles visible along the top, left, right, and bottom margins appear to belong to neighboring cells and were not counted. One red-outlined circle near the hosta has an obscured label."
+  },
+  "G9": {
+    "cellId": "G9",
+    "totalCircles": 11,
+    "structures": [
+      "property line (red vertical lines)",
+      "curved gray path/edge at upper left"
+    ],
+    "plantings": [
+      {
+        "label": "little spire",
+        "count": 2,
+        "description": "medium purple/violet outlined circles with white fill"
+      },
+      {
+        "label": "EchP",
+        "count": 5,
+        "description": "small to medium green outlined circles with white fill"
+      },
+      {
+        "label": "chP",
+        "count": 2,
+        "description": "small green outlined circles with white fill; visible text reads 'chP'"
+      },
+      {
+        "label": "agastache blue fortune",
+        "count": 2,
+        "description": "large purple/violet outlined circles with white fill"
+      }
+    ],
+    "notes": "Count uses the approximate inner cell boundary (~40 px inset). Excluded partial circles whose centers appear outside the cell: the top-right purple 'blue fortune', the left-edge purple 'little spire', the lower-left green 'EchP', and the large pale-green 'camellia' circle whose center appears below the cell."
+  },
+  "G10": {
+    "cellId": "G10",
+    "totalCircles": 0,
+    "structures": [
+      "possible property/boundary lines: one red vertical line and one pale green vertical line along the left side"
+    ],
+    "plantings": [],
+    "notes": "No circle centers are visible within this cell. The visible text ('trees', 'winter snowman', 'ice angel camellia', 'stonehenge yew', 'cherry laurel') appears to be annotation only, not planting markers. A partial purple circle is cut off at the bottom edge, but its center appears outside the cell boundary."
+  },
+  "H1": {
+    "cellId": "H1",
+    "totalCircles": 3,
+    "structures": [
+      "vertical red boundary/planter lines at left",
+      "red double-line rectangular border at lower right",
+      "gray curved path/edge at upper right"
+    ],
+    "plantings": [
+      {
+        "label": "*stipa barbata barbata",
+        "count": 1,
+        "description": "large olive/tan-outlined circle, partially cropped along the top-left but center appears inside the cell"
+      },
+      {
+        "label": "*stipa barbata",
+        "count": 1,
+        "description": "large olive/tan-outlined circle near the upper middle-right"
+      },
+      {
+        "label": "EchP",
+        "count": 1,
+        "description": "small green-outlined circle near the upper right"
+      }
+    ],
+    "notes": "Most of the cell is empty. Another partial tan circle is visible at the very top edge, but its center appears above the cell boundary and was not counted."
+  },
+  "H2": {
+    "cellId": "H2",
+    "totalCircles": 0,
+    "structures": [
+      "hot tub"
+    ],
+    "plantings": [],
+    "notes": "No planting-marker centers clearly fall within the approximate H2 cell boundaries. Partial green circles with labels are visible in the surrounding context at the upper left and right edge, but their centers appear outside the cell. The cell is dominated by the hot tub area/outline."
+  },
+  "H3": {
+    "cellId": "H3",
+    "totalCircles": 6,
+    "structures": [
+      "curving gray path/border lines crossing the cell"
+    ],
+    "plantings": [
+      {
+        "label": "paniculum cloud nine",
+        "count": 2,
+        "description": "Two large pale green/white-filled circles in the lower-left area; one is partly cut off by the left edge."
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "One partially visible pale green outlined circle in the mid-left/lower-left overlap area; only unclear text fragments are visible."
+      },
+      {
+        "label": "PhR",
+        "count": 1,
+        "description": "One small pale green outlined circle near the lower middle-left, close to the bottom boundary."
+      },
+      {
+        "label": "red twig dogwood",
+        "count": 1,
+        "description": "One very large green-outlined white-filled circle on the right side."
+      },
+      {
+        "label": "ACH",
+        "count": 1,
+        "description": "One small green-outlined white-filled circle below/right of the red twig dogwood."
+      }
+    ],
+    "notes": "Centers were judged using the stated ~40 px inset boundary. A second ACH circle is visible at the far lower-right, but its center appears outside the cell. KF and the top-right partial markers also appear to have centers outside the cell."
+  },
+  "H4": {
+    "cellId": "H4",
+    "totalCircles": 17,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "salvia nem.c",
+        "count": 1,
+        "description": "medium lavender/purple-outlined circle near the upper left"
+      },
+      {
+        "label": "YRW",
+        "count": 3,
+        "description": "small yellow-outlined circles; one upper left, one upper right, and one lower left"
+      },
+      {
+        "label": "verbena hast",
+        "count": 2,
+        "description": "large purple-outlined circles along the top edge, partially cropped"
+      },
+      {
+        "label": "*stipa barbata",
+        "count": 3,
+        "description": "large tan/gray-outlined circles at upper center, mid-right, and lower right"
+      },
+      {
+        "label": "Verbas-NIgrum",
+        "count": 1,
+        "description": "medium green-outlined circle near the upper right"
+      },
+      {
+        "label": "echinops",
+        "count": 1,
+        "description": "large pale blue-outlined circle left of center"
+      },
+      {
+        "label": "JSBF",
+        "count": 3,
+        "description": "large yellow-outlined circles across the left/center/lower-left portion of the cell"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "small light-green outlined circle near the right edge below the YRW circle"
+      },
+      {
+        "label": "red twig dogwood",
+        "count": 1,
+        "description": "very large green-outlined circle at the right side, partially cropped"
+      },
+      {
+        "label": "ACH",
+        "count": 1,
+        "description": "small green-outlined circle near the lower left"
+      }
+    ],
+    "notes": "No non-plant structures visible. Count is based on centers falling within the approximate inset cell boundary; several partial circles at the extreme top/left/right/bottom were excluded."
+  },
+  "H5": {
+    "cellId": "H5",
+    "totalCircles": 10,
+    "structures": [
+      "gray diagonal path/property-line-like strip crossing the lower half",
+      "black curved border/edge line near the bottom center"
+    ],
+    "plantings": [
+      {
+        "label": "sneeze weed",
+        "count": 5,
+        "description": "medium to large white-filled circles with red/rust outlines, clustered across the upper and middle part of the cell"
+      },
+      {
+        "label": "Verbas-Nigrum",
+        "count": 1,
+        "description": "green-outlined white circle, partially cropped on the left side"
+      },
+      {
+        "label": "PVG",
+        "count": 1,
+        "description": "large pale-green outlined circle, partially cropped along the top edge"
+      },
+      {
+        "label": "Japan-FG",
+        "count": 1,
+        "description": "large white-filled circle with a light-green outline near the lower-left/center area"
+      },
+      {
+        "label": "unlabeled",
+        "count": 2,
+        "description": "small light-green outlined circles in the left-middle area"
+      }
+    ],
+    "notes": "Counted circles whose centers appear within the approximate inset cell boundary. Top orange milkweed circles, far-right circles, and the large bottom-left dogwood circle appear to have centers outside this cell."
+  },
+  "H6": {
+    "cellId": "H6",
+    "totalCircles": 7,
+    "structures": [
+      "curved gray path/border lines",
+      "thin light-green diagonal line"
+    ],
+    "plantings": [
+      {
+        "label": "panicum cloud nine",
+        "count": 1,
+        "description": "large green-outlined circle with white interior, partially cropped at the upper-left"
+      },
+      {
+        "label": "unlabeled",
+        "count": 3,
+        "description": "medium solid purple/violet circles with a bluish outline/glow; one is close to the left boundary"
+      },
+      {
+        "label": "daylily",
+        "count": 1,
+        "description": "large orange-outlined circle with white interior near the lower-left/center"
+      },
+      {
+        "label": "cinnamon fern",
+        "count": 1,
+        "description": "large green-outlined circle centered in the cell"
+      },
+      {
+        "label": "sprinter BX",
+        "count": 1,
+        "description": "green-outlined circle near the right edge"
+      }
+    ],
+    "notes": "Counted circles whose centers appear inside the approximate inset H6 boundary. Excluded partial circles at the top, bottom, and lower-right whose centers appear outside. The left purple circle and right 'sprinter BX' circle are close to the approximate boundary but appear to have centers inside."
+  },
+  "H7": {
+    "cellId": "H7",
+    "totalCircles": 1,
+    "structures": [
+      "thick gray boundary/edge line across the upper-middle and down the right side",
+      "light green diagonal line near the top"
+    ],
+    "plantings": [
+      {
+        "label": "hosta halcyon",
+        "count": 1,
+        "description": "large green-outlined circle centered in the cell"
+      }
+    ],
+    "notes": "A partially visible circle labeled 'sprinter BX' is at the far left, but its center appears on or just outside the left cell boundary, so it was not counted. Partial circles and labels along the bottom ('cinnamon' / 'actea chocoholic') appear to have centers outside this cell."
+  },
+  "H8": {
+    "cellId": "H8",
+    "totalCircles": 2,
+    "structures": [
+      "gray curved/thick border or path line near the upper/center-right area",
+      "teal-outlined rectangular feature with pale green fill at the lower right",
+      "red horizontal line along the top edge of the lower-right rectangular feature",
+      "green diagonal line and red/cyan curved lines crossing the left/lower-left portion"
+    ],
+    "plantings": [
+      {
+        "label": "EchP",
+        "count": 1,
+        "description": "small green-outlined circle with white interior, near the upper-right portion of the cell"
+      },
+      {
+        "label": "panlculum cloud nlne",
+        "count": 1,
+        "description": "large green-outlined circle with white interior, below the EchP circle"
+      }
+    ],
+    "notes": "A larger green circle labeled \"spiro hetero\" is visible at the top edge, but its center appears above the cell boundary, so it was not counted."
+  },
+  "H9": {
+    "cellId": "H9",
+    "totalCircles": 1,
+    "structures": [
+      "red boundary/bed lines: an L-shaped red outline across the lower-left/center and a vertical red line near the right side"
+    ],
+    "plantings": [
+      {
+        "label": "camellia snowman",
+        "count": 1,
+        "description": "large pale green outlined circle with the label inside; only part of the circle is visible, and its center appears to fall just inside the cell near the upper-left area"
+      }
+    ],
+    "notes": "No other circle centers are visible within the cell. A light green filled rectangular area is also visible at the lower left, likely adjacent bed/background rather than a planting marker."
+  },
+  "H10": {
+    "cellId": "H10",
+    "totalCircles": 1,
+    "structures": [
+      "possible property/boundary lines: one vertical red line and one vertical light green line near the left side"
+    ],
+    "plantings": [
+      {
+        "label": "verbena b",
+        "count": 1,
+        "description": "large white-filled circle with a lavender/purple outline; text written inside the circle"
+      }
+    ],
+    "notes": "One planting marker is clearly centered within the cell. Partial text reading 'cherry laurel' appears at the top-left from adjacent context and is not counted."
+  },
+  "I1": {
+    "cellId": "I1",
+    "totalCircles": 0,
+    "structures": [
+      "red rectilinear boundary/outline lines running vertically through the left half of the cell",
+      "red outlined rectangular corner/edge feature entering from the right side of the cell"
+    ],
+    "plantings": [],
+    "notes": "No circle planting markers are visible with centers inside this cell. The image is dominated by red straight-line structural/boundary outlines; a small red-outlined box is partially visible below the cell boundary in neighboring context."
+  },
+  "I2": {
+    "cellId": "I2",
+    "totalCircles": 0,
+    "structures": [
+      "hot tub"
+    ],
+    "plantings": [],
+    "notes": "No planting circles have centers within this cell. The cell is dominated by the HOT TUB area, outlined in red; partial labeled circles visible along the far right are in adjacent cell(s) and are not counted."
+  },
+  "I3": {
+    "cellId": "I3",
+    "totalCircles": 13,
+    "structures": [
+      "curved gray diagonal band/line crossing the upper-right area (likely a path or boundary/property line)"
+    ],
+    "plantings": [
+      {
+        "label": "PhR",
+        "count": 3,
+        "description": "two small green-outlined white-filled circles and one medium red-outlined white-filled circle"
+      },
+      {
+        "label": "SA grass",
+        "count": 4,
+        "description": "medium light-green outlined circles with pale fill"
+      },
+      {
+        "label": "ech pallida",
+        "count": 4,
+        "description": "medium pale lavender/purple outlined circles with pale fill"
+      },
+      {
+        "label": "monarda brad",
+        "count": 1,
+        "description": "one medium bright purple/magenta outlined circle with pale fill"
+      },
+      {
+        "label": "rudbekia lacinata",
+        "count": 1,
+        "description": "one large yellow-outlined circle with pale fill"
+      }
+    ],
+    "notes": "Counted only circles whose centers appear within the approximate 40 px inset boundary. Excluded clipped neighboring circles at the top, far right, and bottom-right, including a top-edge PhR and a partial monarda brad."
+  },
+  "I4": {
+    "cellId": "I4",
+    "totalCircles": 13,
+    "structures": [
+      "broad gray diagonal path/bed edge across the upper-middle",
+      "black wavy vertical boundary/property line near the right side"
+    ],
+    "plantings": [
+      {
+        "label": "YRW",
+        "count": 2,
+        "description": "yellow outlined circles; one medium near the top-left area and one smaller near the top-center"
+      },
+      {
+        "label": "JSBF",
+        "count": 1,
+        "description": "large yellow outlined circle near the top"
+      },
+      {
+        "label": "stipa barbata",
+        "count": 1,
+        "description": "large tan/beige outlined circle near the top"
+      },
+      {
+        "label": "ACH",
+        "count": 2,
+        "description": "small green outlined circles in the upper-right/top-center area"
+      },
+      {
+        "label": "dogwood",
+        "count": 1,
+        "description": "very large green outlined circle, partially cropped at the top-right"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "medium green outlined circle near the center with no readable label"
+      },
+      {
+        "label": "monarda brad",
+        "count": 1,
+        "description": "large magenta/purple outlined circle on the lower-left side"
+      },
+      {
+        "label": "SA gras",
+        "count": 2,
+        "description": "small light-green/lime outlined circles in the lower-left to lower-middle area"
+      },
+      {
+        "label": "aruncus horatio",
+        "count": 2,
+        "description": "large green outlined circles in the lower-middle/right-lower area"
+      }
+    ],
+    "notes": "Count based on centers falling within the approximate 40 px inset cell boundary. Excluded clipped edge circles whose centers appear outside, including the top-left ACH and partial circles along the bottom edge."
+  },
+  "I5": {
+    "cellId": "I5",
+    "totalCircles": 3,
+    "structures": [
+      "curving gray line/path across the upper-middle area",
+      "black curving boundary/line near the right side",
+      "teal vertical border/edge line near the lower-right"
+    ],
+    "plantings": [
+      {
+        "label": "daylily",
+        "count": 1,
+        "description": "medium-large orange-outlined circle in the upper-right portion of the cell"
+      },
+      {
+        "label": "aruncus horatio",
+        "count": 2,
+        "description": "green-outlined circles along the right side; one mid-right and one lower-right, overlapping nearby circles"
+      }
+    ],
+    "notes": "Several partial circles near the edges appear to belong to neighboring cells, including dogwood at upper left, PG at top, another aruncus at far right, and SA grass at lower right. The lower-right aruncus is close to the right boundary but its center appears within I5."
+  },
+  "I6": {
+    "cellId": "I6",
+    "totalCircles": 9,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "daylily",
+        "count": 3,
+        "description": "large overlapping white-filled circles with orange outlines"
+      },
+      {
+        "label": "aruncus horatio",
+        "count": 2,
+        "description": "medium white-filled circles with muted green/gray outlines; one is close to the left boundary"
+      },
+      {
+        "label": "SA grass",
+        "count": 3,
+        "description": "small white-filled circles with light lime-green outlines; one is close to the bottom boundary"
+      },
+      {
+        "label": "cinnamon fern",
+        "count": 1,
+        "description": "large white-filled circle with muted green/gray outline on the right; label split across lines"
+      }
+    ],
+    "notes": "Several partial circles are visible in the surrounding context at the top, left, and bottom, but only centers appearing within the approximate inset cell were counted. Thin colored lines are visible but do not read clearly as definite non-plant structures."
+  },
+  "I7": {
+    "cellId": "I7",
+    "totalCircles": 5,
+    "structures": [
+      "curved gray line along the right side",
+      "teal curved line near the lower-right edge",
+      "light green diagonal line crossing the cell"
+    ],
+    "plantings": [
+      {
+        "label": "cinnamon fern",
+        "count": 3,
+        "description": "large white circles with muted green/gray outlines, each labeled inside; one near upper-left, one upper-right, and one lower-center"
+      },
+      {
+        "label": "SA",
+        "count": 1,
+        "description": "smaller pale/light-green outlined circle near the center-left with 'SA' inside"
+      },
+      {
+        "label": "unlabeled",
+        "count": 1,
+        "description": "medium solid black filled circle near the lower-left/center, partly overlapped by neighboring circles"
+      }
+    ],
+    "notes": "A partial cinnamon fern circle is visible along the left edge, but its center appears outside the I7 cell and was not counted. Count is based on the approximate cell boundary 40 px inset from the crop edges."
+  },
+  "I8": {
+    "cellId": "I8",
+    "totalCircles": 0,
+    "structures": [
+      "thick teal vertical line running through the cell",
+      "green shaded rectangular area in the upper-right portion",
+      "curved red line crossing the cell",
+      "curved pale-cyan line near the right side",
+      "light green diagonal line across the lower-left toward center"
+    ],
+    "plantings": [],
+    "notes": "No planting-marker circles or plant labels are visible whose centers fall within this cell. The cell appears to contain only linework/shaded non-plant elements; exact structure types are unclear."
+  },
+  "I9": {
+    "cellId": "I9",
+    "totalCircles": 0,
+    "structures": [
+      "property/boundary lines"
+    ],
+    "plantings": [],
+    "notes": "No planting circles or plant labels are visible in this cell. The cell shows a broad green-shaded area along the left side and several red boundary/property lines, including vertical lines through the cell and a horizontal line near the bottom."
+  },
+  "I10": {
+    "cellId": "I10",
+    "totalCircles": 0,
+    "structures": [
+      "red outlined rectangular edge/bed border",
+      "vertical property/boundary lines"
+    ],
+    "plantings": [],
+    "notes": "No planting circles are visible with centers inside this cell. The cell shows mostly linework: a thick red L-shaped border, thin vertical boundary lines at the left, and a black dimension annotation reading 8'-2\" near the top."
+  },
+  "J1": {
+    "cellId": "J1",
+    "totalCircles": 0,
+    "structures": [],
+    "plantings": [],
+    "notes": "No planting-marker circles are visible within the cell. This crop is dominated by a red measurement/selection-style overlay and large '60 px' text, so no plant labels or listed garden structures can be confidently identified."
+  },
+  "J2": {
+    "cellId": "J2",
+    "totalCircles": 0,
+    "structures": [],
+    "plantings": [],
+    "notes": "No planting circles have centers within the cell boundaries. The crop shows large printed text/legend content and red linework near the top and middle, plus a small partial yellow curve at the extreme upper-right context area, but no countable plant markers inside J2."
+  },
+  "J3": {
+    "cellId": "J3",
+    "totalCircles": 2,
+    "structures": [
+      "red horizontal boundary/edge lines across the lower half, with several red vertical dividers/partitions below"
+    ],
+    "plantings": [
+      {
+        "label": "rudbekia laciniata",
+        "count": 2,
+        "description": "two large overlapping pale gray/white circles with yellow outlines, each labeled inside"
+      }
+    ],
+    "notes": "Counted only the two large rudbekia circles whose centers are clearly within the inset cell area. Partial small green and purple circles along the top/right edges appear to have centers outside the cell and were not counted. A fragment of large black text is visible at the left edge, but no additional plant circle center is within the cell."
+  },
+  "J4": {
+    "cellId": "J4",
+    "totalCircles": 10,
+    "structures": [
+      "teal-outlined rectangular structure along the right edge",
+      "red outlined hardscape/boundary grid across the lower portion"
+    ],
+    "plantings": [
+      {
+        "label": "SA grass",
+        "count": 2,
+        "description": "light green circles with green outlines, medium size"
+      },
+      {
+        "label": "aruncus horatio",
+        "count": 2,
+        "description": "large pale circles with gray-green outlines"
+      },
+      {
+        "label": "amaranth",
+        "count": 6,
+        "description": "magenta/purple outlined circles with white fill, medium size, some overlapping"
+      }
+    ],
+    "notes": "Plantings are concentrated in the upper half of the cell. Partial neighboring circles are visible along the top/left edges and were not counted. Two counted circles near the top edge appear to have centers just inside the cell boundary."
+  },
+  "J5": {
+    "cellId": "J5",
+    "totalCircles": 1,
+    "structures": [],
+    "plantings": [
+      {
+        "label": "SA grass",
+        "count": 1,
+        "description": "large light-green circle with black text inside, near the upper-right of the cell; center appears to fall within the cell"
+      }
+    ],
+    "notes": "No other plant circles are visible. Teal/red linework and a gray vertical line are present in the crop, but they are not confidently identifiable as one of the listed non-plant structures."
+  },
+  "J6": {
+    "cellId": "J6",
+    "totalCircles": 2,
+    "structures": [
+      "Red-outlined rectilinear structure along the bottom edge with repeated narrow divisions (possibly stairs or deck/edge detail)",
+      "Curved red and teal linework crossing the right/lower-right portion of the cell"
+    ],
+    "plantings": [
+      {
+        "label": "SA grass",
+        "count": 1,
+        "description": "medium lime-green circle with darker green outline and black text inside"
+      },
+      {
+        "label": "cinnamon fern",
+        "count": 1,
+        "description": "large pale gray/white-filled circle with muted green outline and bold black text inside"
+      }
+    ],
+    "notes": "A second SA grass circle is partially visible at the far left, but its center appears outside the cell boundary. A partial large fern circle is visible at the top right, with its center outside the cell. The text 'actea chocoholic' is visible, but no counted circle center for that label appears inside this cell."
+  },
+  "J7": {
+    "cellId": "J7",
+    "totalCircles": 0,
+    "structures": [
+      "partial orange-bordered rectangular structure at the right edge with text beginning 'B'",
+      "vertical teal/gray feature along the right edge",
+      "red horizontal line and several red vertical line segments in the lower portion (boundary/structure lines)"
+    ],
+    "plantings": [],
+    "notes": "No circle centers clearly fall within this cell. The visible circles are only partial and appear near the top edge, with centers likely outside/above J7. Visible text such as the partial fern label and 'actea chocoholic' appears associated with those neighboring-cell plantings rather than circles centered in J7."
+  },
+  "J8": {
+    "cellId": "J8",
+    "totalCircles": 0,
+    "structures": [
+      "bench"
+    ],
+    "plantings": [],
+    "notes": "No planting circles are visible with centers inside this cell. A labeled bench occupies part of the left side, and additional red/cyan linework (curved and horizontal) passes through the cell."
+  },
+  "J9": {
+    "cellId": "J9",
+    "totalCircles": 0,
+    "structures": [
+      "red-outlined horizontal linear feature across the lower half of the cell",
+      "red-outlined vertical linear feature near the right side",
+      "two red-outlined rectangular/square structures in the lower center and lower right"
+    ],
+    "plantings": [],
+    "notes": "No planting circles or plant labels are visible within the cell. The cell appears to show only rectilinear red-outlined non-plant features on a gray background; exact structure type is unclear from this crop."
+  },
+  "J10": {
+    "cellId": "J10",
+    "totalCircles": 0,
+    "structures": [
+      "red rectilinear boundary/structure lines across the upper and lower portions of the cell",
+      "double horizontal red lines across the lower half with a partial rectangular segment at the left edge"
+    ],
+    "plantings": [],
+    "notes": "No circular planting markers are visible with centers inside this cell. No plant labels are present. The cell appears to contain only red linework from a non-plant boundary or built feature; exact structure type is unclear."
+  }
+}

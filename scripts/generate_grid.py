@@ -23,7 +23,7 @@ from typing import Optional
 # Paths
 # -------------------------------------------------------------------
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-ANALYSIS_JSON = PROJECT_ROOT / "cell-analysis" / "analysis_results.json"
+ANALYSIS_JSON = PROJECT_ROOT / "cell-analysis" / "analysis_results_pro.json"
 ABBREV_TS = PROJECT_ROOT / "src" / "data" / "abbreviationDecodings.ts"
 GRID_TS = PROJECT_ROOT / "src" / "data" / "gridAssignments.ts"
 OUTPUT_TS = GRID_TS  # overwrite in place
@@ -242,6 +242,32 @@ KNOWN_LABELS: dict[str, dict] = {
     "knipho-fia uvalia":    {"speciesId": "kniphofia-uvaria", "confidence": "medium"},
     "viburnum x bodnantense 'dawn'": {"speciesId": "viburnum", "confidence": "high"},
     "viburnum x bodnantense dawn": {"speciesId": "viburnum", "confidence": "high"},
+    # --- Added from GPT-5.4 Pro analysis unmatched labels ---
+    "*rattle-snak":         {"speciesId": "rattlesnake-master", "confidence": "high"},
+    "*stipa barbata barbata": {"speciesId": "stipa-barbata", "confidence": "medium"},
+    "ACI":                  {"speciesId": "actaea-chocoholic", "confidence": "low"},
+    "EchGo":                {"speciesId": "echinacea-green-jewel", "confidence": "medium"},
+    "JPY":                  {"speciesId": "phlox-paniculata-jeana", "confidence": "low"},
+    "JPYW":                 {"speciesId": "phlox-paniculata-jeana", "confidence": "low"},
+    "Japan-FG":             {"speciesId": "japanese-forest-grass", "confidence": "medium"},
+    "japan fg":             {"speciesId": "japanese-forest-grass", "confidence": "medium"},
+    "SA sungras":           {"speciesId": "salvia", "confidence": "low"},
+    "STPO":                 {"speciesId": "stipa-barbata", "confidence": "low"},
+    "STP.G":                {"speciesId": "stipa-barbata", "confidence": "low"},
+    "UPYW":                 {"speciesId": "phlox-paniculata-jeana", "confidence": "low"},
+    "W/H":                  {"speciesId": "winterberry-holly", "confidence": "low"},
+    "YW":                   {"speciesId": "yarrow", "confidence": "low"},
+    "achillea":             {"speciesId": "achillea", "confidence": "high"},
+    "baltp parsley":        {"speciesId": "baltic-parsley", "confidence": "high"},
+    "chP":                  {"speciesId": "cherry", "confidence": "low"},
+    "dogwood":              {"speciesId": "red-twig-dogwood", "confidence": "medium"},
+    "panlculum cloud nlne": {"speciesId": "panicum-cloud-nine", "confidence": "high"},
+    "rattle-master":        {"speciesId": "rattlesnake-master", "confidence": "high"},
+    "rudbeck sub":          {"speciesId": "rudbeckia", "confidence": "high"},
+    "rudbekia lacinata":    {"speciesId": "rudbeckia-laciniata", "confidence": "high"},
+    "verbena hast":         {"speciesId": "verbena-hastata", "confidence": "high"},
+    "wood sp":              {"speciesId": "wood-spurge", "confidence": "medium"},
+    "geum tang":            {"speciesId": "geum-tangerine", "confidence": "medium"},
 }
 
 # Build a lowercase lookup for KNOWN_LABELS
