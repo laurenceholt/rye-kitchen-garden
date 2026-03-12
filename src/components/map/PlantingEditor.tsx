@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { X, RotateCcw, Sparkles } from 'lucide-react';
-import type { CellPlanting, Confidence } from '../../types';
+import { X, RotateCcw, Sparkles, Plus } from 'lucide-react';
+import type { CellPlanting, Confidence, PlantSpecies } from '../../types';
 import { gridAssignments } from '../../data/gridAssignments';
 import { searchPlants } from '../../utils/searchPlants';
 import { useGarden } from '../../hooks/useGardenState';
@@ -10,6 +10,10 @@ interface Props {
   cellId: string;
   planting: CellPlanting;
   onClose: () => void;
+}
+
+function toKebabCase(s: string): string {
+  return s.toLowerCase().trim().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-');
 }
 
 export function PlantingEditor({ cellId, planting, onClose }: Props) {
@@ -32,6 +36,32 @@ export function PlantingEditor({ cellId, planting, onClose }: Props) {
   const allPlants = actions.getAllPlants();
   const filtered = query.trim() ? searchPlants(query, allPlants).slice(0, 8) : [];
   const selectedSpecies = actions.getPlantById(selectedSpeciesId);
+
+  const addCustomSpeciesManually = (name: string) => {
+    const id = toKebabCase(name);
+    const customPlant: PlantSpecies = {
+      id,
+      commonName: name.trim(),
+      scientificName: name.trim(),
+      category: 'perennial',
+      heightRange: [12, 36],
+      spreadRange: [12, 24],
+      sunRequirement: 'part-sun',
+      moistureRequirement: 'average',
+      soilPreference: ['any'],
+      bloomSeason: ['summer'],
+      bloomColor: ['unknown'],
+      hardinessZone: [4, 8],
+      deerResistant: false,
+      nativeTo: ['unknown'],
+      estimatedCostPerPlant: 10,
+      notes: 'Manually added — edit details as needed',
+    };
+    actions.addCustomPlant(customPlant);
+    setSelectedSpeciesId(id);
+    setConfidence('high');
+    setQuery('');
+  };
 
   const countOtherMatches = (abbr: string) => {
     const abbrLower = abbr.toLowerCase();
@@ -188,18 +218,28 @@ export function PlantingEditor({ cellId, planting, onClose }: Props) {
             </div>
           )}
 
-          {/* AI lookup when no results */}
-          {filtered.length === 0 && query.trim().length >= 3 && isOpenAIConfigured() && (
-            <div className="p-3 border border-dashed border-garden-300 rounded-lg bg-garden-50/50">
-              <p className="text-xs text-text-secondary mb-2">No matching species in database</p>
-              <button
-                onClick={handleAILookup}
-                disabled={aiLoading}
-                className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-white bg-garden-500 rounded-lg hover:bg-garden-600 transition-colors disabled:opacity-50"
-              >
-                <Sparkles className="w-3.5 h-3.5" />
-                {aiLoading ? 'Looking up...' : `Look up "${query}" with AI`}
-              </button>
+          {/* Species not in database — AI lookup or manual add */}
+          {filtered.length === 0 && query.trim().length >= 3 && (
+            <div className="p-3 border border-dashed border-garden-300 rounded-lg bg-garden-50/50 space-y-2">
+              <p className="text-xs text-text-secondary">Not found in database</p>
+              {isOpenAIConfigured() ? (
+                <button
+                  onClick={handleAILookup}
+                  disabled={aiLoading}
+                  className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-white bg-garden-500 rounded-lg hover:bg-garden-600 transition-colors disabled:opacity-50"
+                >
+                  <Sparkles className="w-3.5 h-3.5" />
+                  {aiLoading ? 'Validating...' : `Look up "${query.trim()}" — verify & add full species data`}
+                </button>
+              ) : (
+                <button
+                  onClick={() => addCustomSpeciesManually(query)}
+                  className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-white bg-garden-500 rounded-lg hover:bg-garden-600 transition-colors"
+                >
+                  <Plus className="w-3.5 h-3.5" />
+                  Add &ldquo;{query.trim()}&rdquo; manually (no companion data)
+                </button>
+              )}
               {aiError && <p className="mt-1 text-xs text-red-600">{aiError}</p>}
             </div>
           )}
