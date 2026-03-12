@@ -1,7 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
 import type { GardenState, TabId, Confidence, UserCorrections, CellPlanting, PlantSpecies } from './types';
 import { GardenContext, defaultCorrections } from './hooks/useGardenState';
-import { useLocalStorage } from './hooks/useLocalStorage';
+import { useSupabaseStorage } from './hooks/useSupabaseStorage';
 import { gridCellMap, gridAssignments } from './data/gridAssignments';
 import { plantDatabase, plantDatabaseMap } from './data/plantDatabase';
 import { Header } from './components/layout/Header';
@@ -15,11 +15,11 @@ export default function App() {
   const [selectedTab, setSelectedTab] = useState<TabId>('map');
   const [searchQuery, setSearchQuery] = useState('');
   const [confidenceFilter, setConfidenceFilter] = useState<Confidence[]>(['high', 'medium', 'low']);
-  const [userCorrections, setUserCorrections] = useLocalStorage<UserCorrections>(
+  const [userCorrections, setUserCorrections] = useSupabaseStorage<UserCorrections>(
     'garden-map-corrections-v2',
     defaultCorrections
   );
-  const [customPlants, setCustomPlants] = useLocalStorage<PlantSpecies[]>(
+  const [customPlants, setCustomPlants] = useSupabaseStorage<PlantSpecies[]>(
     'garden-custom-plants-v1',
     []
   );
