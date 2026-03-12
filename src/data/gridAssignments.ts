@@ -33,7 +33,7 @@ export const gridAssignments: GridCell[] = [
       { id: 'A5-3', abbreviation: 'verbena b', decodedSpeciesId: 'verbena-bonariensis', confidence: 'high', quantity: 1 },
       { id: 'A5-4', abbreviation: 'knautia macedon', decodedSpeciesId: 'knautia-macedo', confidence: 'high', quantity: 1 },
       { id: 'A5-5', abbreviation: 'unlabeled', decodedSpeciesId: 'unknown', confidence: 'low', quantity: 1 },
-      { id: 'A5-6', abbreviation: 'geum tang', decodedSpeciesId: 'geum-tangerine', confidence: 'medium', quantity: 3 },
+      { id: 'A5-6', abbreviation: 'geum tang', decodedSpeciesId: 'geum', confidence: 'high', quantity: 3 },
       { id: 'A5-7', abbreviation: 'liatris ligul', decodedSpeciesId: 'liatris-ligulistylis', confidence: 'high', quantity: 2 },
       { id: 'A5-8', abbreviation: 'liatris spic', decodedSpeciesId: 'liatris', confidence: 'high', quantity: 1 },
       { id: 'A5-9', abbreviation: '*rattle-snak', decodedSpeciesId: 'rattlesnake-master', confidence: 'high', quantity: 1 },

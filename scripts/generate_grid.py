@@ -267,7 +267,7 @@ KNOWN_LABELS: dict[str, dict] = {
     "rudbekia lacinata":    {"speciesId": "rudbeckia-laciniata", "confidence": "high"},
     "verbena hast":         {"speciesId": "verbena-hastata", "confidence": "high"},
     "wood sp":              {"speciesId": "wood-spurge", "confidence": "medium"},
-    "geum tang":            {"speciesId": "geum-tangerine", "confidence": "medium"},
+    "geum tang":            {"speciesId": "geum", "confidence": "high"},
 }
 
 # Build a lowercase lookup for KNOWN_LABELS
